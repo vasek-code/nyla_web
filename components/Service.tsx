@@ -29,7 +29,13 @@ export const Service: React.FC<{
           justify="center"
           w={["100%", "100%", "100%", "50%"]}
         >
-          <Text color="white" fontSize="4xl" fontWeight="600" pb="10px">
+          <Text
+            color="white"
+            fontSize="4xl"
+            fontWeight="600"
+            pb="10px"
+            textAlign="center"
+          >
             {heading}
           </Text>
           <Text color="white" px="30px" fontSize="large" textAlign="center">
