@@ -220,6 +220,7 @@ export default function Background() {
         className="background"
         style={{
           opacity: "0.5",
+          background: "black",
         }}
       >
         <span></span>

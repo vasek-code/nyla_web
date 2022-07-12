@@ -75,7 +75,7 @@ export default function Video({
             <Heading
               color="white"
               fontWeight="800"
-              fontSize="5xl"
+              fontSize="3rem"
               letterSpacing="-2px"
               textAlign="center"
               data-aos="fade-up"

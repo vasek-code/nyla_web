@@ -12,7 +12,7 @@ import {
 import Router from "next/router";
 import Navbar from "../components/Navbar";
 import { BiPlay } from "react-icons/bi";
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
+import { BsArrowDownCircle } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
 import Background from "../components/Background";
 import Video from "../components/Video";
@@ -54,10 +54,10 @@ export default function Home() {
               VAŠE KREATIVNÍ AGENTURA
             </Heading>
             <Flex pt="20px">
-              <BsFillArrowDownCircleFill
+              <BsArrowDownCircle
                 style={{ cursor: "pointer" }}
                 color="white"
-                size="70px"
+                size="50px"
                 onClick={() => {
                   scrollBy({
                     top: viewHeight,
@@ -87,8 +87,8 @@ export default function Home() {
           </Text>
           <Text
             textAlign="center"
-            maxW="50%"
-            fontSize={["2xl", "2xl", "2xl", "4xl"]}
+            maxW={["90%", "90%", "50%", "50%"]}
+            fontSize={["larger", "larger", "2xl", "4xl"]}
             fontWeight="semibold"
           >
             Kreativní agentura, která Vás vtáhne do děje! Jsme tu pro vás od
@@ -97,10 +97,10 @@ export default function Home() {
             klienty.
           </Text>
           <Flex pt="20px">
-            <BsFillArrowDownCircleFill
+            <BsArrowDownCircle
               style={{ cursor: "pointer" }}
               color="white"
-              size="70px"
+              size="50px"
               onClick={() => {
                 scrollBy({
                   top: viewHeight - 100,

@@ -29,27 +29,20 @@ export const Service: React.FC<{
           justify="center"
           w={["100%", "100%", "100%", "50%"]}
         >
-          <Text
-            color="white"
-            fontSize="4xl"
-            fontWeight="600"
-            pb="10px"
-            textAlign="center"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
-            {heading}
-          </Text>
-          <Text
-            color="white"
-            px="30px"
-            fontSize="large"
-            textAlign="center"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
-            {text}
-          </Text>
+          <Flex flexDir="column" data-aos="fade-up" data-aos-duration="700">
+            <Text
+              color="white"
+              fontSize="4xl"
+              fontWeight="600"
+              pb="10px"
+              textAlign="center"
+            >
+              {heading}
+            </Text>
+            <Text color="white" px="30px" fontSize="large" textAlign="center">
+              {text}
+            </Text>
+          </Flex>
         </VStack>
       </Flex>
     </VStack>

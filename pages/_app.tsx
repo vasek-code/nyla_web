@@ -22,12 +22,14 @@ function MyApp({ Component, pageProps }) {
   });
 
   return (
-    <ChakraProvider theme={theme}>
-      {start && <Intro />}
-      <Background />
-      <Navbar />
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <>
+      <ChakraProvider theme={theme}>
+        {start && <Intro />}
+        <Background />
+        <Navbar />
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
   );
 }
 
