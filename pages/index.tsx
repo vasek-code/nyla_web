@@ -94,7 +94,7 @@ export default function Home() {
           videoSrc="https://player.vimeo.com/video/320433440"
         />
         <Video
-          nadpis="Nezapomenutelné cestování"
+          nadpis="Exclusive Tours"
           text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
           src="	https://i.ytimg.com/vi_webp/cWZfMEXvVPA/sddefault.webp"
           videoSrc="https://www.youtube.com/embed/cWZfMEXvVPA"
