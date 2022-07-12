@@ -216,7 +216,12 @@ export default function Background() {
           }
         `}
       </style>
-      <div className="background">
+      <div
+        className="background"
+        style={{
+          opacity: "0.5",
+        }}
+      >
         <span></span>
         <span></span>
         <span></span>

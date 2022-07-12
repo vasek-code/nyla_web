@@ -10,15 +10,15 @@ export const Service: React.FC<{
   return (
     <VStack
       gap="20px"
-      data-aos="fade-down"
-      data-aos-duration="500"
-      data-aos-once="true"
+      // data-aos="fade-down"
+      // data-aos-duration="500"
+      // data-aos-once="true"
       w="100%"
     >
       <Flex
         backgroundImage={`url(${src})`}
         backgroundSize="cover"
-        h="600px"
+        h="550px"
         minW="100%"
         w="100%"
         justify={reverse && "flex-end"}
@@ -35,10 +35,19 @@ export const Service: React.FC<{
             fontWeight="600"
             pb="10px"
             textAlign="center"
+            data-aos="fade-up"
+            data-aos-duration="700"
           >
             {heading}
           </Text>
-          <Text color="white" px="30px" fontSize="large" textAlign="center">
+          <Text
+            color="white"
+            px="30px"
+            fontSize="large"
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
             {text}
           </Text>
         </VStack>

@@ -105,6 +105,28 @@ export default function Navbar() {
                 >
                   KONTAKT
                 </Button>
+                <Flex gap="20px">
+                  <a
+                    href="https://www.instagram.com/nylacreativeagency"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <IconButton
+                      icon={<BsInstagram size="22px" />}
+                      aria-label="instagram"
+                    />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/nylacreativeagency"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <IconButton
+                      icon={<BsFacebook size="22px" />}
+                      aria-label="facebook"
+                    />
+                  </a>
+                </Flex>
               </VStack>
             </VStack>
           </Flex>
@@ -139,8 +161,7 @@ export default function Navbar() {
           </Flex>
           <HStack
             align="center"
-            gap="30px"
-            pr="20px"
+            gap="10px"
             display={["none", "none", "flex", "flex"]}
           >
             <Button
@@ -183,7 +204,7 @@ export default function Navbar() {
             >
               KONTAKT
             </Button>
-            <Flex gap="30px">
+            <Flex gap="20px">
               <a
                 href="https://www.instagram.com/nylacreativeagency"
                 target="_blank"

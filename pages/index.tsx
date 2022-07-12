@@ -60,13 +60,55 @@ export default function Home() {
                 size="70px"
                 onClick={() => {
                   scrollBy({
-                    top: viewHeight - 120,
+                    top: viewHeight,
                     behavior: "smooth",
                   });
                 }}
               />
             </Flex>
           </VStack>
+        </Flex>
+        <Flex
+          w="100%"
+          h="100vh"
+          flexDir="column"
+          justify="center"
+          align="center"
+          gap="20px"
+        >
+          <Text
+            color="white"
+            fontWeight="800"
+            fontSize="6xl"
+            letterSpacing="-2px"
+            textAlign="center"
+          >
+            O nás
+          </Text>
+          <Text
+            textAlign="center"
+            maxW="50%"
+            fontSize={["2xl", "2xl", "2xl", "4xl"]}
+            fontWeight="semibold"
+          >
+            Kreativní agentura, která Vás vtáhne do děje! Jsme tu pro vás od
+            roku 2011. Zajišťujeme vývoj a výrobu audiovizuálních děl pro
+            komunikační, digitální či eventové agentury, ale i přímo pro
+            klienty.
+          </Text>
+          <Flex pt="20px">
+            <BsFillArrowDownCircleFill
+              style={{ cursor: "pointer" }}
+              color="white"
+              size="70px"
+              onClick={() => {
+                scrollBy({
+                  top: viewHeight - 100,
+                  behavior: "smooth",
+                });
+              }}
+            />
+          </Flex>
         </Flex>
         <Video
           nadpis="Two Lions To Venice"

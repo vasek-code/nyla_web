@@ -25,10 +25,10 @@ export default function Video({
     <>
       {opened && <VideoFrame handleClick={handleClick} src={videoSrc} />}
       <Flex
-        data-aos="fade-right"
-        data-aos-delay="0"
-        data-aos-once="true"
-        data-aos-offset="20"
+        // data-aos="fade-right"
+        // data-aos-delay="0"
+        // data-aos-once="true"
+        // data-aos-offset="20"
         display={["none", "none", "none", "flex"]}
       >
         <Flex w="100%" h="100%">
@@ -39,6 +39,8 @@ export default function Video({
               fontSize="6xl"
               letterSpacing="-2px"
               textAlign="center"
+              data-aos="fade-up"
+              data-aos-duration="700"
             >
               {nadpis}
             </Heading>
@@ -62,10 +64,10 @@ export default function Video({
         </Flex>
       </Flex>
       <Flex
-        data-aos="fade-right"
-        data-aos-delay="0"
-        data-aos-once="true"
-        data-aos-offset="4"
+        // data-aos="fade-right"
+        // data-aos-delay="0"
+        // data-aos-once="true"
+        // data-aos-offset="4"
         display={["flex", "flex", "flex", "none"]}
       >
         <VStack w="100%" h="100%" pb="40px" gap="30px">
@@ -76,6 +78,8 @@ export default function Video({
               fontSize="5xl"
               letterSpacing="-2px"
               textAlign="center"
+              data-aos="fade-up"
+              data-aos-duration="700"
             >
               {nadpis}
             </Heading>
