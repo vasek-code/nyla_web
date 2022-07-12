@@ -126,7 +126,7 @@ export default function Navbar() {
             }}
             mt="13px"
             position="relative"
-            right="10px"
+            right="25px"
           />
           <Flex
             display={["flex", "flex", "none", "none"]}
