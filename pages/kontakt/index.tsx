@@ -32,7 +32,7 @@ export default function Kontakt() {
         </Heading>
         <HStack gap="80px" pb="10px" px="20px">
           <VStack data-aos="fade-down">
-            <Image src="/images/lukas.png" width="250px" />
+            <Image src="/images/lukas.png" width="250px" alt="lukas mracek" />
             <Heading color="white" textAlign="center" fontSize="4xl">
               Lukáš Mráček
             </Heading>
@@ -46,7 +46,7 @@ export default function Kontakt() {
             </Text>
           </VStack>
           <VStack data-aos="fade-up">
-            <Image src="/images/ondrej.png" width="250px" />
+            <Image src="/images/ondrej.png" width="250px" alt="ondrej belica" />
             <Heading color="white" textAlign="center" fontSize="4xl">
               Ondřej Belica
             </Heading>
