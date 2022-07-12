@@ -68,7 +68,7 @@ export default function Video({
         data-aos-offset="4"
         display={["flex", "flex", "flex", "none"]}
       >
-        <VStack w="100%" h="100%" pb="80px" gap="30px">
+        <VStack w="100%" h="100%" pb="40px" gap="30px">
           <VStack justify="center" align="center" px="20px">
             <Heading
               color="white"

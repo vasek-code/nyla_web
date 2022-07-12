@@ -24,8 +24,9 @@ export default function Postprodukce() {
         <Heading
           color="white"
           fontWeight="800"
-          fontSize="6xl"
-          letterSpacing="-2px"
+          fontSize={["4xl", "6xl", "6xl", "6xl"]}
+          letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
+          textAlign="center"
         >
           Co používáme za software
         </Heading>

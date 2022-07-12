@@ -24,6 +24,7 @@ export default function Sluzby() {
             fontWeight="800"
             fontSize="6xl"
             letterSpacing="-2px"
+            textAlign="center"
           >
             Naše služby
           </Heading>

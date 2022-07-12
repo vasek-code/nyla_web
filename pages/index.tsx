@@ -30,7 +30,6 @@ export default function Home() {
       <Flex
         w="100%"
         minH="100vh"
-        pb="60px"
         flexDirection="column"
         position="absolute"
         zIndex="2"
