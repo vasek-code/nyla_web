@@ -104,6 +104,12 @@ export default function Home() {
           src="https://i.vimeocdn.com/video/567298298-73b95fa179ca63abb1188dd8983128a97ade5ea09d6a2d15a4c4ce7148f659b7-d?mw=1500"
           videoSrc="https://player.vimeo.com/video/163822866"
         />
+        <Video
+          nadpis="Volvo Trucks 20 let"
+          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
+          src="https://i.ytimg.com/vi_webp/zFX3F2FrIOg/sddefault.webp"
+          videoSrc="https://www.youtube.com/embed/zFX3F2FrIOg"
+        />
       </Flex>
     </>
   );

@@ -4,11 +4,13 @@ import {
   Container,
   Flex,
   HStack,
+  IconButton,
   Image,
   VStack,
 } from "@chakra-ui/react";
 import Router from "next/router";
 import React, { useRef, useState } from "react";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 
@@ -181,6 +183,28 @@ export default function Navbar() {
             >
               KONTAKT
             </Button>
+            <Flex gap="30px">
+              <a
+                href="https://www.instagram.com/nylacreativeagency"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IconButton
+                  icon={<BsInstagram size="22px" />}
+                  aria-label="instagram"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/nylacreativeagency"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IconButton
+                  icon={<BsFacebook size="22px" />}
+                  aria-label="facebook"
+                />
+              </a>
+            </Flex>
           </HStack>
         </HStack>
       </Flex>
