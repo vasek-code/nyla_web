@@ -1,9 +1,10 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
-  // fonts: {
-  //   text: "Montserrat"
-  // }
-})
+  config: {
+    initialColorMode: "dark",
+    useSystemColorMode: false,
+  },
+});
 
-export default theme
+export default theme;
