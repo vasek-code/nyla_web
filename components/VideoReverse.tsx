@@ -1,59 +1,94 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Heading, HStack, VStack, Text, Flex, Image } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { BiPlay } from "react-icons/bi";
+import { VideoFrame } from "./VideoFrame";
 
-export default function VideoReverse({
+export default function Video({
   nadpis,
   text,
   src,
+  videoSrc,
 }: {
   nadpis: string;
   text: string;
   src: string;
+  videoSrc: string;
 }) {
+  const [opened, setOpened] = useState(false);
+
+  const handleClick = () => {
+    setOpened(!opened);
+  };
+
   return (
     <>
-      <Flex
-        data-aos="fade-right"
-        data-aos-delay="0"
-        data-aos-once="true"
-        data-aos-offset="20"
-        display={["none", "none", "flex", "flex"]}
-      >
-        <HStack gap="20px" w="100%" h="100%">
-          <Flex justify="center" align="center" w="50%">
-            <Flex position="absolute" justify="center" cursor="pointer">
-              <BiPlay color="white" size="100px" />
-            </Flex>
-            <Image __css={{ aspectRatio: "16/9" }} src={src} />
-          </Flex>
-          <VStack justify="center" align="center" gap="40px" px="20px" w="50%">
-            <Heading color="white">{nadpis}</Heading>
-            <Text color="white" textAlign="center">
-              {text}
-            </Text>
-          </VStack>
-        </HStack>
-      </Flex>
+      {opened && <VideoFrame handleClick={handleClick} src={videoSrc} />}
       <Flex
         data-aos="fade-left"
         data-aos-delay="0"
         data-aos-once="true"
         data-aos-offset="20"
-        display={["flex", "flex", "none", "none"]}
+        display={["none", "none", "none", "flex"]}
+      >
+        <Flex w="100%" h="100%">
+          <Flex justify="center" align="center" w="50%">
+            <Flex position="absolute" justify="center" cursor="pointer">
+              <BiPlay color="white" size="100px" onClick={handleClick} />
+            </Flex>
+            <Image src={src} />
+          </Flex>
+          <VStack justify="center" align="center" gap="40px" px="20px" w="50%">
+            <Heading
+              color="white"
+              fontWeight="800"
+              fontSize="6xl"
+              letterSpacing="-2px"
+              textAlign="center"
+            >
+              {nadpis}
+            </Heading>
+
+            {/* <Text
+              color="white"
+              textAlign="center"
+              fontWeight="semibold"
+              fontSize="2xl"
+              letterSpacing="0px"
+            >
+              {text}
+            </Text> */}
+          </VStack>
+        </Flex>
+      </Flex>
+      <Flex
+        data-aos="fade-left"
+        data-aos-delay="0"
+        data-aos-once="true"
+        data-aos-offset="4"
+        display={["flex", "flex", "flex", "none"]}
       >
         <VStack w="100%" h="100%" pb="80px" gap="30px">
           <VStack justify="center" align="center" px="20px">
-            <Heading color="white">{nadpis}</Heading>
-            <Text color="white" textAlign="center">
+            <Heading
+              color="white"
+              fontWeight="800"
+              fontSize="5xl"
+              letterSpacing="-2px"
+              textAlign="center"
+            >
+              {nadpis}
+            </Heading>
+
+            {/* <Text color="white" textAlign="center">
               {text}
-            </Text>
+            </Text> */}
           </VStack>
           <Flex justify="center" align="center">
             <Flex position="absolute" justify="center" cursor="pointer">
-              <BiPlay color="white" size="100px" />
+              <BiPlay color="white" size="100px" onClick={handleClick} />
             </Flex>
-            <Image __css={{ aspectRatio: "16/9" }} w="100%" src={src} />
+            <Image w="100%" src={src} />
           </Flex>
         </VStack>
       </Flex>

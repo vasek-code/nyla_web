@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import {
   Button,
   Container,
@@ -22,7 +23,6 @@ export default function Navbar() {
 
   return (
     <>
-    
       <Flex
         h="100px"
         backgroundColor="#202124"
@@ -113,7 +113,7 @@ export default function Navbar() {
           h="100%"
           align="center"
           justify="space-between"
-          px="20px"
+          pr="20px"
         >
           <Image
             src="/images/logoHDweb.png"
@@ -125,6 +125,8 @@ export default function Navbar() {
               Router.push("/");
             }}
             mt="13px"
+            position="relative"
+            right="10px"
           />
           <Flex
             display={["flex", "flex", "none", "none"]}

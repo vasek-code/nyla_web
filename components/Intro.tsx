@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Flex, Image } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
@@ -15,7 +16,7 @@ export default function Intro() {
       <Flex
         w="100%"
         h="100vh"
-        position="absolute"
+        position="fixed"
         zIndex="200"
         background="#202124"
         className={closing && "fadeOut"}
