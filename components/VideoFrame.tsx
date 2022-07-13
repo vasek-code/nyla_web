@@ -13,7 +13,7 @@ export const VideoFrame: React.FC<{
       background="blackAlpha.800"
       position="fixed"
       zIndex="1000"
-      pt="100px"
+      pt={["80px", "80px", "100px", "100px"]}
       flexDir="column"
       onClick={handleClick as unknown as MouseEventHandler<HTMLDivElement>}
     >
@@ -31,15 +31,20 @@ export const VideoFrame: React.FC<{
           onClick={handleClick}
         />
       </Flex>
-      <Flex w="100%" h="100%" align="center" justify="center">
-        <iframe
-          src={src}
-          width="1300"
-          height="100%"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen={true}
-        />
+      <Flex align="center" justify="center" w="100%" h="100%" p="20px">
+        <Flex w="100%" h="min-content" maxW="1200px">
+          <iframe
+            src={src}
+            style={{
+              aspectRatio: "16/9",
+              width: "100%",
+              height: "100%",
+            }}
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen={true}
+          />
+        </Flex>
       </Flex>
     </Flex>
   );

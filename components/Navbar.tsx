@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <>
       <Flex
-        h="100px"
+        h={["80px", "80px", "100px", "100px"]}
         backgroundColor="#202124"
         w="100%"
         position="fixed"
@@ -142,7 +142,7 @@ export default function Navbar() {
           <Image
             src="/images/logoHDweb.png"
             width="100%"
-            maxWidth="220px"
+            maxWidth="180px"
             height="auto"
             cursor="pointer"
             onClick={() => {
@@ -150,7 +150,7 @@ export default function Navbar() {
             }}
             mt="13px"
             position="relative"
-            right="25px"
+            right="18px"
           />
           <Flex
             display={["flex", "flex", "none", "none"]}

@@ -32,48 +32,52 @@ export default function Sluzby() {
           <Service
             heading="Offline střih"
             text="Avid Media Composer, Adobe Premiere Pro, Final Cut Pro"
-            src="images/video-editing.jpg"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/video-editing_bfiutj.jpg"
           />
 
           <Service
             heading="Barevné korekce"
             text="DaVinci Resolve Studio"
-            src="images/color.jpg"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/color_gafyjl.jpg"
             reverse
           />
 
           <Service
             heading="VFX and Motion Graphic"
             text="Adobe After Effects, Nuke"
-            src="images/vfx.jpg"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/vfx_qle3ru.jpg"
           />
 
           <Service
             heading="Grafické práce"
             text="Adobe Illustrator, Adobe Photoshop"
-            src="images/grafic.jpg"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/grafic_sssqjt.jpg"
             reverse
           />
 
-          <Service heading="Animace" text="3D Max" src="images/animation.jpg" />
+          <Service
+            heading="Animace"
+            text="3D Max"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/animation_o5kkkw.jpg"
+          />
 
           <Service
             heading="Zvuková postprodukce"
             text="Avid Pro Tools"
-            src="images/sound.jpg"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/sound_jymab1.jpg"
             reverse
           />
 
           <Service
             heading="Dramaturgie"
             text="Střihová dramaturgie"
-            src="images/dramaturgy.jpg"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/dramaturgy_hriwce.jpg"
           />
 
           <Service
             heading="Workshopy"
             text="Offline střih, Barevné korekce"
-            src="images/workshop.jpg"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/workshop_xfstc3.jpg"
             reverse
           />
         </VStack>
