@@ -51,7 +51,12 @@ export default function Postprodukce() {
               align="center"
             >
               <Image src="/images/davinci.png" w="200px" alt="davinci" />
-              <Text textAlign="center" color="white" fontWeight="semibold">
+              <Text
+                textAlign="center"
+                color="white"
+                fontWeight="bold"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+              >
                 DaVinci Resolve Studio
               </Text>
             </VStack>
@@ -63,7 +68,12 @@ export default function Postprodukce() {
               align="center"
             >
               <Image src="/images/premiere.svg" w="200px" alt="premiere" />
-              <Text textAlign="center" color="white" fontWeight="semibold">
+              <Text
+                textAlign="center"
+                color="white"
+                fontWeight="bold"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+              >
                 Adobe Premiere Pro
               </Text>
             </VStack>
@@ -75,7 +85,12 @@ export default function Postprodukce() {
               align="center"
             >
               <Image src="/images/avid.jpg" w="200px" alt="avid" />
-              <Text textAlign="center" color="white" fontWeight="semibold">
+              <Text
+                textAlign="center"
+                color="white"
+                fontWeight="bold"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+              >
                 Avid Media Composer
               </Text>
             </VStack>
@@ -87,7 +102,12 @@ export default function Postprodukce() {
               align="center"
             >
               <Image src="/images/after.png" w="200px" alt="after effects" />
-              <Text textAlign="center" color="white" fontWeight="semibold">
+              <Text
+                textAlign="center"
+                color="white"
+                fontWeight="bold"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+              >
                 Adobe After Effects
               </Text>
             </VStack>
@@ -100,7 +120,12 @@ export default function Postprodukce() {
               align="center"
             >
               <Image src="/images/photoshop.png" w="200px" alt="photoshop" />
-              <Text textAlign="center" color="white" fontWeight="semibold">
+              <Text
+                textAlign="center"
+                color="white"
+                fontWeight="bold"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+              >
                 Adobe Photoshop
               </Text>
             </VStack>
@@ -112,7 +137,12 @@ export default function Postprodukce() {
               align="center"
             >
               <Image src="/images/protools.png" w="200px" alt="protools" />
-              <Text textAlign="center" color="white" fontWeight="semibold">
+              <Text
+                textAlign="center"
+                color="white"
+                fontWeight="bold"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+              >
                 Avid Pro Tools
               </Text>
             </VStack>
@@ -124,7 +154,12 @@ export default function Postprodukce() {
               align="center"
             >
               <Image src="/images/3d.png" w="200px" alt="3d" />
-              <Text textAlign="center" color="white" fontWeight="semibold">
+              <Text
+                textAlign="center"
+                color="white"
+                fontWeight="bold"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+              >
                 3D Max
               </Text>
             </VStack>
@@ -140,7 +175,12 @@ export default function Postprodukce() {
                 w="200px"
                 alt="illustrator"
               />
-              <Text textAlign="center" color="white" fontWeight="semibold">
+              <Text
+                textAlign="center"
+                color="white"
+                fontWeight="bold"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+              >
                 Adobe Illustrator
               </Text>
             </VStack>

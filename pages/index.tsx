@@ -29,8 +29,10 @@ export default function Home() {
         position="absolute"
         zIndex="2"
         overflowY="hidden"
+        scrollSnapType="y mandatory"
+        overflow="auto"
       >
-        <Flex w="100%" h="100vh">
+        <Flex w="100%" h="100vh" scrollSnapAlign="start">
           <VStack w="100%" h="100%" justify="center" align="center">
             {/* <Heading size="4xl" color="white">
               NYLA
@@ -75,6 +77,7 @@ export default function Home() {
           justify="center"
           align="center"
           gap="20px"
+          scrollSnapAlign="start"
         >
           <Text
             color="white"

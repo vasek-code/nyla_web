@@ -41,8 +41,8 @@ export default function Video({
                 <Heading
                   color="white"
                   fontWeight="800"
-                  fontSize={["2.5rem", "2.5rem", "3rem", "3.5rem"]}
-                  letterSpacing="-2px"
+                  fontSize={["1.8rem", "2.5rem", "3rem", "3.5rem"]}
+                  letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
                   textAlign="center"
                   data-aos="fade-up"
                   data-aos-duration="700"
@@ -74,8 +74,8 @@ export default function Video({
                 <Heading
                   color="white"
                   fontWeight="800"
-                  fontSize={["2.5rem", "2.5rem", "3rem", "3.5rem"]}
-                  letterSpacing="-2px"
+                  fontSize={["1.8rem", "2.5rem", "3rem", "3.5rem"]}
+                  letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
                   textAlign="center"
                   data-aos="fade-up"
                   data-aos-duration="700"
@@ -116,8 +116,8 @@ export default function Video({
                 <Heading
                   color="white"
                   fontWeight="800"
-                  fontSize={["2.5rem", "2.5rem", "3rem", "3.5rem"]}
-                  letterSpacing="-2px"
+                  fontSize={["1.8rem", "2.5rem", "3rem", "3.5rem"]}
+                  letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
                   textAlign="center"
                   data-aos="fade-up"
                   data-aos-duration="700"
@@ -143,8 +143,8 @@ export default function Video({
                 <Heading
                   color="white"
                   fontWeight="800"
-                  fontSize={["2.5rem", "2.5rem", "3rem", "3.5rem"]}
-                  letterSpacing="-2px"
+                  fontSize={["1.8rem", "2.5rem", "3rem", "3.5rem"]}
+                  letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
                   textAlign="center"
                   data-aos="fade-up"
                   data-aos-duration="700"
