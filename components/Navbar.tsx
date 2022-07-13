@@ -8,7 +8,7 @@ import {
   Image,
   VStack,
 } from "@chakra-ui/react";
-import Router from "next/router";
+import Router, { useRouter } from "next/router";
 import React, { useRef, useState } from "react";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -18,6 +18,7 @@ export default function Navbar() {
   const [opened, setOpened] = useState(false);
   const leftRef = useRef();
   const rightRef = useRef();
+  const router = useRouter();
 
   function handleClick() {
     setOpened(!opened);

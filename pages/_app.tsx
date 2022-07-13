@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ChakraProvider theme={theme}>
-        {start && <Intro />}
+        {/* {start && <Intro />} */}
         <Background />
         <Navbar />
         <Component {...pageProps} />
