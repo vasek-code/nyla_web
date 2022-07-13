@@ -1,7 +1,7 @@
 @import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
 
 * {
-  font-family: Segoe UI !important;
+  font-family: Segoe UI, Inter !important;
 }
 
 body::-webkit-scrollbar {

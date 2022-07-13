@@ -10,6 +10,7 @@ import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
 import { Flex } from "@chakra-ui/react";
 import Background from "../components/Background";
+import "@fontsource/inter";
 
 function MyApp({ Component, pageProps }) {
   const [start, setStart] = useState(true);
