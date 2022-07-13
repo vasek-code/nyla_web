@@ -11,7 +11,7 @@ export default function Sluzby() {
       <Flex
         w="100%"
         minH="100vh"
-        pt="150px"
+        pt="110px"
         gap="100px"
         pb="60px"
         position="absolute"
@@ -22,8 +22,8 @@ export default function Sluzby() {
           <Heading
             color="white"
             fontWeight="800"
-            fontSize="6xl"
-            letterSpacing="-2px"
+            fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
+            letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
             textAlign="center"
           >
             Naše služby

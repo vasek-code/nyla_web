@@ -23,7 +23,7 @@ export default function Kontakt() {
       <Flex
         w="100%"
         minH="100vh"
-        pt="150px"
+        pt="110px"
         gap="100px"
         pb="60px"
         position="absolute"
@@ -34,12 +34,12 @@ export default function Kontakt() {
           <Heading
             color="white"
             fontWeight="800"
-            fontSize="6xl"
-            letterSpacing="-2px"
+            fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
+            letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
           >
             Kontakt
           </Heading>
-          <HStack gap="80px" pb="10px" px="20px">
+          <HStack gap={["0px", "80px", "80px", "80px"]} pb="10px" px="20px">
             <VStack data-aos="fade-down">
               <Image src="/images/lukas.png" width="250px" alt="lukas mracek" />
               <Heading color="white" textAlign="center" fontSize="4xl">
@@ -86,25 +86,30 @@ export default function Kontakt() {
               napište email a my se vám co nejdříve ozveme!
             </Text>
 
-            <Flex w="100%" justifyContent="center" gap="20%">
-              <VStack gap="10px" h="100%" justify="flex-start">
+            <Flex
+              maxW="600px"
+              w="100%"
+              justifyContent="center"
+              gap={["20px", "20%", "20%", "20%"]}
+            >
+              <VStack gap="10px" h="100%" justify="flex-start" w="100%">
                 <AiFillPhone color="white" size="100px" />
                 <Text
                   color="white"
                   textAlign="center"
                   fontWeight="semibold"
-                  fontSize="larger"
+                  fontSize={["1rem", "larger", "larger", "larger"]}
                 >
                   +420 775 322 101
                 </Text>
               </VStack>
-              <VStack gap="10px" h="100%" justify="flex-start">
+              <VStack gap="10px" h="100%" justify="flex-start" w="100%">
                 <AiFillMail color="white" size="100px" />
                 <Text
                   color="white"
                   textAlign="center"
                   fontWeight="semibold"
-                  fontSize="larger"
+                  fontSize={["1rem", "larger", "larger", "larger"]}
                 >
                   info@nyla.cz
                 </Text>

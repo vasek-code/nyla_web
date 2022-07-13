@@ -43,9 +43,14 @@ export default function Home() {
               alt="logo"
             />
             <Flex py="10px">
-              <Divider w="50px" opacity="1" />
+              <Divider w="50px" opacity="1" background="white" />
             </Flex>
-            <Heading color="white" size="lg" fontWeight="800">
+            <Heading
+              color="white"
+              size="lg"
+              fontWeight="800"
+              textAlign="center"
+            >
               VAŠE KREATIVNÍ AGENTURA
             </Heading>
             <Flex pt="20px">

@@ -68,7 +68,8 @@ export default function Navbar() {
                 <Button
                   variant="link"
                   color="white"
-                  fontSize="25px"
+                  fontSize={["20px", "20px", "25px", "25px"]}
+                  fontWeight="bold"
                   onClick={() => {
                     Router.push("/");
                   }}
@@ -78,7 +79,8 @@ export default function Navbar() {
                 <Button
                   variant="link"
                   color="white"
-                  fontSize="25px"
+                  fontSize={["20px", "20px", "25px", "25px"]}
+                  fontWeight="bold"
                   onClick={() => {
                     Router.push("/sluzby");
                   }}
@@ -88,7 +90,8 @@ export default function Navbar() {
                 <Button
                   variant="link"
                   color="white"
-                  fontSize="25px"
+                  fontSize={["20px", "20px", "25px", "25px"]}
+                  fontWeight="bold"
                   onClick={() => {
                     Router.push("/postprodukce");
                   }}
@@ -98,7 +101,8 @@ export default function Navbar() {
                 <Button
                   variant="link"
                   color="white"
-                  fontSize="25px"
+                  fontSize={["20px", "20px", "25px", "25px"]}
+                  fontWeight="bold"
                   onClick={() => {
                     Router.push("/kontakt");
                   }}

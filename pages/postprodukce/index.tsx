@@ -6,6 +6,7 @@ import {
   Flex,
   Text,
   HStack,
+  Grid,
 } from "@chakra-ui/react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
@@ -14,7 +15,7 @@ export default function Postprodukce() {
     <Flex
       w="100%"
       minH="100vh"
-      pt="150px"
+      pt="110px"
       gap="100px"
       pb="60px"
       position="absolute"
@@ -24,59 +25,116 @@ export default function Postprodukce() {
         <Heading
           color="white"
           fontWeight="800"
-          fontSize={["4xl", "6xl", "6xl", "6xl"]}
+          fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
           letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
           textAlign="center"
         >
           Co používáme za software
         </Heading>
-        <VStack w="100%" h="100%" justify="center" px="20px" gap="20px">
-          <HStack gap="20px" w="100%" justify="center">
-            <VStack data-aos="fade-down" data-aos-delay="0">
+        <VStack w="100%" h="100%" px={["10px", "20px", "20px", "20px"]}>
+          <Grid
+            gap="20px"
+            maxW="1000px"
+            gridTemplateColumns={[
+              "1fr 1fr",
+              "1fr 1fr 1fr 1fr",
+              "1fr 1fr 1fr 1fr",
+              "1fr 1fr 1fr 1fr",
+            ]}
+            rowGap="30px"
+          >
+            <VStack
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-delay="0"
+              justify="center"
+              align="center"
+            >
               <Image src="/images/davinci.png" w="200px" alt="davinci" />
               <Text textAlign="center" color="white" fontWeight="semibold">
                 DaVinci Resolve Studio
               </Text>
             </VStack>
-            <VStack data-aos="fade-up" data-aos-delay="200">
+            <VStack
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="200"
+              justify="center"
+              align="center"
+            >
               <Image src="/images/premiere.svg" w="200px" alt="premiere" />
               <Text textAlign="center" color="white" fontWeight="semibold">
                 Adobe Premiere Pro
               </Text>
             </VStack>
-            <VStack data-aos="fade-down" data-aos-delay="300">
+            <VStack
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-delay="300"
+              justify="center"
+              align="center"
+            >
               <Image src="/images/avid.jpg" w="200px" alt="avid" />
               <Text textAlign="center" color="white" fontWeight="semibold">
                 Avid Media Composer
               </Text>
             </VStack>
-            <VStack data-aos="fade-up" data-aos-delay="400">
+            <VStack
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="400"
+              justify="center"
+              align="center"
+            >
               <Image src="/images/after.png" w="200px" alt="after effects" />
               <Text textAlign="center" color="white" fontWeight="semibold">
                 Adobe After Effects
               </Text>
             </VStack>
-          </HStack>
-          <HStack gap="20px" w="100%" justify="center">
-            <VStack data-aos="fade-down" data-aos-delay="500">
+
+            <VStack
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-delay="500"
+              justify="center"
+              align="center"
+            >
               <Image src="/images/photoshop.png" w="200px" alt="photoshop" />
               <Text textAlign="center" color="white" fontWeight="semibold">
                 Adobe Photoshop
               </Text>
             </VStack>
-            <VStack data-aos="fade-up" data-aos-delay="600">
+            <VStack
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="600"
+              justify="center"
+              align="center"
+            >
               <Image src="/images/protools.png" w="200px" alt="protools" />
               <Text textAlign="center" color="white" fontWeight="semibold">
                 Avid Pro Tools
               </Text>
             </VStack>
-            <VStack data-aos="fade-down" data-aos-delay="700">
+            <VStack
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-delay="700"
+              justify="center"
+              align="center"
+            >
               <Image src="/images/3d.png" w="200px" alt="3d" />
               <Text textAlign="center" color="white" fontWeight="semibold">
                 3D Max
               </Text>
             </VStack>
-            <VStack data-aos="fade-up" data-aos-delay="800">
+            <VStack
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="800"
+              justify="center"
+              align="center"
+            >
               <Image
                 src="/images/illustrator.png"
                 w="200px"
@@ -86,7 +144,7 @@ export default function Postprodukce() {
                 Adobe Illustrator
               </Text>
             </VStack>
-          </HStack>
+          </Grid>
         </VStack>
       </VStack>
     </Flex>

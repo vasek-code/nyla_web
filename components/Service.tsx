@@ -24,7 +24,7 @@ export const Service: React.FC<{
         justify={reverse && "flex-end"}
       >
         <VStack
-          background="blackAlpha.700"
+          background="blackAlpha.500"
           py="10px"
           justify="center"
           w={["100%", "100%", "100%", "50%"]}
