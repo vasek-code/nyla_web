@@ -39,40 +39,57 @@ export default function Kontakt() {
           >
             Kontakt
           </Heading>
-          <HStack gap={["0px", "80px", "80px", "80px"]} pb="10px" px="20px">
-            <VStack data-aos="fade-down">
-              <Image src="/images/lukas.png" width="250px" alt="lukas mracek" />
-              <Heading color="white" textAlign="center" fontSize="4xl">
+          <Flex
+            gap={["60px", "20px", "20px", "20px"]}
+            pb="10px"
+            px="20px"
+            align="flex-start"
+            h="max-content"
+            flexDir={["column", "row", "row", "row"]}
+          >
+            <VStack data-aos="fade-down" w="100%" h="100%">
+              <Image src="/images/lukas.png" width="180px" alt="lukas mracek" />
+              <Heading
+                color="white"
+                textAlign="center"
+                fontSize={["1.2rem", "1.5rem", "2rem", "2rem"]}
+                fontWeight="800"
+              >
                 Lukáš Mráček
               </Heading>
               <Text
                 color="white"
                 textAlign="center"
                 fontWeight="semibold"
-                fontSize="larger"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
               >
                 Producer Executive Producer
               </Text>
             </VStack>
-            <VStack data-aos="fade-up">
+            <VStack data-aos="fade-up" w="100%" h="100%">
               <Image
                 src="/images/ondrej.png"
-                width="250px"
+                width="180px"
                 alt="ondrej belica"
               />
-              <Heading color="white" textAlign="center" fontSize="4xl">
+              <Heading
+                color="white"
+                textAlign="center"
+                fontSize={["1.2rem", "1.5rem", "2rem", "2rem"]}
+                fontWeight="800"
+              >
                 Ondřej Belica
               </Heading>
               <Text
                 color="white"
                 textAlign="center"
                 fontWeight="semibold"
-                fontSize="larger"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
               >
                 DOP Postproduction supervisor
               </Text>
             </VStack>
-          </HStack>
+          </Flex>
 
           <VStack w="100%">
             <Text
@@ -80,36 +97,37 @@ export default function Kontakt() {
               w="50%"
               textAlign="center"
               fontWeight="semibold"
-              fontSize="larger"
+              fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
             >
               Jste připraveni dělat další projekt s náma? Zavolejte anebo nám
               napište email a my se vám co nejdříve ozveme!
             </Text>
 
             <Flex
-              maxW="600px"
+              maxW="500px"
               w="100%"
               justifyContent="center"
               gap={["20px", "20%", "20%", "20%"]}
+              pt="25px"
             >
               <VStack gap="10px" h="100%" justify="flex-start" w="100%">
-                <AiFillPhone color="white" size="100px" />
+                <AiFillPhone color="white" size="80px" />
                 <Text
                   color="white"
                   textAlign="center"
                   fontWeight="semibold"
-                  fontSize={["1rem", "larger", "larger", "larger"]}
+                  fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
                 >
                   +420 775 322 101
                 </Text>
               </VStack>
               <VStack gap="10px" h="100%" justify="flex-start" w="100%">
-                <AiFillMail color="white" size="100px" />
+                <AiFillMail color="white" size="80px" />
                 <Text
                   color="white"
                   textAlign="center"
                   fontWeight="semibold"
-                  fontSize={["1rem", "larger", "larger", "larger"]}
+                  fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
                 >
                   info@nyla.cz
                 </Text>
