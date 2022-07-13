@@ -47,14 +47,27 @@ export default function Home() {
             <Flex py="10px">
               <Divider w="50px" opacity="1" background="white" />
             </Flex>
-            <Heading
-              color="white"
-              size="lg"
-              fontWeight="800"
-              textAlign="center"
-            >
-              VAŠE KREATIVNÍ AGENTURA
-            </Heading>
+            <Flex px="20px" flexDir="column">
+              <Text
+                fontWeight="800"
+                fontSize={["1.5rem", "1.5rem", "2rem", "2rem"]}
+                mb="10px"
+                textAlign="center"
+              >
+                VAŠE KREATIVNÍ AGENTURA
+              </Text>
+              <Text
+                color="white"
+                textAlign="center"
+                maxW="500px"
+                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
+                fontWeight="500"
+              >
+                která Vás vtáhne do děje! Jsme tu pro vás od roku 2011.
+                Zajišťujeme vývoj a výrobu audiovizuálních děl pro komunikační,
+                digitální či eventové agentury, ale i přímo pro klienty.
+              </Text>
+            </Flex>
             <Flex pt="20px">
               <BsArrowDownCircle
                 style={{ cursor: "pointer" }}
@@ -62,7 +75,7 @@ export default function Home() {
                 size="50px"
                 onClick={() => {
                   scrollBy({
-                    top: viewHeight,
+                    top: viewHeight - 100,
                     behavior: "smooth",
                   });
                 }}
@@ -70,49 +83,7 @@ export default function Home() {
             </Flex>
           </VStack>
         </Flex>
-        <Flex
-          w="100%"
-          h="100vh"
-          flexDir="column"
-          justify="center"
-          align="center"
-          gap="20px"
-          scrollSnapAlign="start"
-        >
-          <Text
-            color="white"
-            fontWeight="800"
-            fontSize="6xl"
-            letterSpacing="-2px"
-            textAlign="center"
-          >
-            O nás
-          </Text>
-          <Text
-            textAlign="center"
-            maxW={["90%", "90%", "50%", "50%"]}
-            fontSize={["larger", "larger", "2xl", "4xl"]}
-            fontWeight="semibold"
-          >
-            Kreativní agentura, která Vás vtáhne do děje! Jsme tu pro vás od
-            roku 2011. Zajišťujeme vývoj a výrobu audiovizuálních děl pro
-            komunikační, digitální či eventové agentury, ale i přímo pro
-            klienty.
-          </Text>
-          <Flex pt="20px">
-            <BsArrowDownCircle
-              style={{ cursor: "pointer" }}
-              color="white"
-              size="50px"
-              onClick={() => {
-                scrollBy({
-                  top: viewHeight - 100,
-                  behavior: "smooth",
-                });
-              }}
-            />
-          </Flex>
-        </Flex>
+
         <Video
           nadpis="Two Lions To Venice"
           text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."

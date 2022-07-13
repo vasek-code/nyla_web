@@ -68,7 +68,7 @@ export default function Navbar() {
               <VStack w="100%" gap="20px">
                 <Button
                   variant="link"
-                  color="white"
+                  color={router.route === "/" ? "#2792c2" : "white"}
                   fontSize={["20px", "20px", "25px", "25px"]}
                   fontWeight="bold"
                   onClick={() => {
@@ -79,7 +79,7 @@ export default function Navbar() {
                 </Button>
                 <Button
                   variant="link"
-                  color="white"
+                  color={router.route === "/sluzby" ? "#2792c2" : "white"}
                   fontSize={["20px", "20px", "25px", "25px"]}
                   fontWeight="bold"
                   onClick={() => {
