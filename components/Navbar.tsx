@@ -145,17 +145,15 @@ export default function Navbar() {
           pr="20px"
         >
           <Image
-            src="/images/logoHDweb.png"
+            src="/images/logo.png"
             width="100%"
-            maxWidth="180px"
+            maxWidth="120px"
+            ml="20px"
             height="auto"
             cursor="pointer"
             onClick={() => {
               Router.push("/");
             }}
-            mt="13px"
-            position="relative"
-            right="18px"
           />
           <Flex
             display={["flex", "flex", "none", "none"]}

@@ -25,7 +25,7 @@ export default function Intro() {
       >
         <Image
           marginTop={["0px", "0px", "100px", "170px"]}
-          src="/images/logoHDweb.png"
+          src="/images/logo.png"
           __css={{ aspectRatio: "16/9" }}
           data-aos="fade-down"
           position="absolute"

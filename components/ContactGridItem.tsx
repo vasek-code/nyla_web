@@ -13,7 +13,7 @@ export const ContactGridItem: React.FC<{
       w="100%"
       maxW="350px"
       h="500px"
-      background="whiteAlpha.200"
+      background="rgba(255, 255, 255, 0.11)"
       borderRadius="8px"
       p="20px"
       _hover={{

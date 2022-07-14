@@ -11,7 +11,7 @@ export const ServicesGridItem: React.FC<{
     <GridItem
       w="270px"
       h="360px"
-      background="whiteAlpha.200"
+      background="rgba(255, 255, 255, 0.11)"
       borderRadius="8px"
       p="20px"
       _hover={{

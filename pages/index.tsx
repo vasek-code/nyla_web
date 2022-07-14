@@ -37,13 +37,7 @@ export default function Home() {
             {/* <Heading size="4xl" color="white">
               NYLA
             </Heading> */}
-            <Image
-              src="/images/logoHDweb.png"
-              w="500px"
-              position="relative"
-              top="60px"
-              alt="logo"
-            />
+            <Image src="/images/logo.png" w="250px" alt="logo" />
             <Flex py="10px">
               <Divider w="50px" opacity="1" background="white" />
             </Flex>
