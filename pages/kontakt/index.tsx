@@ -44,6 +44,7 @@ export default function Kontakt2Page() {
               grid-column-start: 1;
               grid-column-end: 2;
               grid-row-start: 3;
+              width: 100%;
             }
           }
         `}
@@ -57,6 +58,7 @@ export default function Kontakt2Page() {
         overflow="hidden"
         flexDir="column"
         pb="20px"
+        px="10px"
       >
         <Heading
           color="white"
@@ -65,17 +67,36 @@ export default function Kontakt2Page() {
           fontWeight="800"
           fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
           letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
-          my="20px"
+          mt="20px"
         >
           Kontakt
         </Heading>
-        <Flex justify="center" w="100%" h="100%" mt="20px">
+        <Flex w="100%" justify="center" py="30px">
+          <Flex
+            justify="center"
+            maxW="620px"
+            background="whiteAlpha.100"
+            p="10px"
+            borderRadius="10px"
+            border="1px solid gray"
+          >
+            <Text
+              textAlign="center"
+              fontSize={["1rem", "1.1rem", "1.2rem", "1.2rem"]}
+              mb="8px"
+              fontWeight="600"
+            >
+              Jste připraveni dělat další projekt s náma? <br /> Zavolejte anebo
+              nám napište email a my se vám co nejdříve ozveme!
+            </Text>
+          </Flex>
+        </Flex>
+        <Flex justify="center" w="100%" h="100%">
           <Grid
             gridTemplateColumns="repeat(3, 1fr)"
             columnGap="25px"
             rowGap="25px"
             className="contact-grid"
-            px="10px"
           >
             <ContactGridItem
               src="/images/lukas.png"

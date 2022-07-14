@@ -10,8 +10,6 @@ export const ContactGridItem: React.FC<{
 }> = ({ src, heading, text, last }) => {
   return (
     <GridItem
-      w="100%"
-      maxW="350px"
       h="500px"
       background="rgba(255, 255, 255, 0.11)"
       borderRadius="8px"
@@ -25,7 +23,11 @@ export const ContactGridItem: React.FC<{
     >
       <Flex flexDir="column" w="100%" h="100%">
         <Flex justify="center" align="center">
-          <Image w="160px" src={src} alt={heading} />
+          <Image
+            w={["120px", "160px", "160px", "160px"]}
+            src={src}
+            alt={heading}
+          />
         </Flex>
         <Text
           w="100%"
