@@ -61,22 +61,22 @@ export default function Postprodukce() {
               <ServicesGridItem
                 heading="COPYWRITING"
                 text="Print, Online, Video"
-                src="https://www.nyla.cz/assets/img/icons/development.png"
+                src="/images/development.png"
               />
               <ServicesGridItem
                 heading="VIDEO MARKETING"
                 text="Nápad, Výroba, Digitál"
-                src="https://www.nyla.cz/assets/img/icons/camera.png"
+                src="/images/camera.png"
               />
               <ServicesGridItem
                 heading="PRODUCTION SERVICE"
                 text="AVD, Eventy, Workshopy"
-                src="https://www.nyla.cz/assets/img/icons/executive.png"
+                src="/images/executive.png"
               />
               <ServicesGridItem
                 heading="POSTPRODUCTION"
                 text="Graphics, Offline, Color Correction, Sound, VFX"
-                src="https://www.nyla.cz/assets/img/icons/postproduction.png"
+                src="/images/postproduction.png"
               />
             </Grid>
           </Flex>

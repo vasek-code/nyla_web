@@ -78,17 +78,17 @@ export default function Kontakt2Page() {
             px="10px"
           >
             <ContactGridItem
-              src="https://www.nyla.cz/assets/img/lukas.png"
+              src="/images/lukas.png"
               heading="Lukáš Mráček"
               text="Producer Executive Producer"
             />
             <ContactGridItem
-              src="	https://www.nyla.cz/assets/img/tomas.png"
+              src="/images/tomas.png"
               heading="Tomáš Hruška"
               text="Scriptwriter Director Dramaturge"
             />
             <ContactGridItem
-              src="	https://www.nyla.cz/assets/img/ondrej.png"
+              src="/images/ondrej.png"
               heading="Ondřej Belica"
               text="DOP Postproduction supervisor"
               last
