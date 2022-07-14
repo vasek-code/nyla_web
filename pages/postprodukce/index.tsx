@@ -1,192 +1,87 @@
-import {
-  Divider,
-  Heading,
-  VStack,
-  Image,
-  Flex,
-  Text,
-  HStack,
-  Grid,
-} from "@chakra-ui/react";
+import { Heading, VStack, Image, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import Background from "../../components/Background";
+import { Service } from "../../components/Service";
 
-export default function Postprodukce() {
+export default function Sluzby() {
+  useEffect(() => {}, []);
+
   return (
-    <Flex
-      w="100%"
-      minH="100vh"
-      pt="110px"
-      gap="100px"
-      pb="60px"
-      position="absolute"
-      zIndex="2"
-    >
-      <VStack w="100%" h="100%" gap="20px" justify="center">
-        <Heading
-          color="white"
-          fontWeight="800"
-          fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
-          letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
-          textAlign="center"
-        >
-          Co používáme za software
-        </Heading>
-        <VStack w="100%" h="100%" px={["10px", "20px", "20px", "20px"]}>
-          <Grid
-            gap="20px"
-            maxW="1000px"
-            gridTemplateColumns={[
-              "1fr 1fr",
-              "1fr 1fr 1fr 1fr",
-              "1fr 1fr 1fr 1fr",
-              "1fr 1fr 1fr 1fr",
-            ]}
-            rowGap="30px"
+    <>
+      <Flex
+        w="100%"
+        minH="100vh"
+        pt="110px"
+        gap="100px"
+        pb="60px"
+        position="absolute"
+        zIndex="2"
+        justify="center"
+      >
+        <VStack gap="30px" maxW="1200px" px="20px" w="100%">
+          <Heading
+            color="white"
+            fontWeight="800"
+            fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
+            letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
+            textAlign="center"
           >
-            <VStack
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-delay="0"
-              justify="center"
-              align="center"
-            >
-              <Image src="/images/davinci.png" w="200px" alt="davinci" />
-              <Text
-                textAlign="center"
-                color="white"
-                fontWeight="bold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                DaVinci Resolve Studio
-              </Text>
-            </VStack>
-            <VStack
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="200"
-              justify="center"
-              align="center"
-            >
-              <Image src="/images/premiere.svg" w="200px" alt="premiere" />
-              <Text
-                textAlign="center"
-                color="white"
-                fontWeight="bold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                Adobe Premiere Pro
-              </Text>
-            </VStack>
-            <VStack
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-delay="300"
-              justify="center"
-              align="center"
-            >
-              <Image src="/images/avid.jpg" w="200px" alt="avid" />
-              <Text
-                textAlign="center"
-                color="white"
-                fontWeight="bold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                Avid Media Composer
-              </Text>
-            </VStack>
-            <VStack
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="400"
-              justify="center"
-              align="center"
-            >
-              <Image src="/images/after.png" w="200px" alt="after effects" />
-              <Text
-                textAlign="center"
-                color="white"
-                fontWeight="bold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                Adobe After Effects
-              </Text>
-            </VStack>
+            Postprodukce
+          </Heading>
 
-            <VStack
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-delay="500"
-              justify="center"
-              align="center"
-            >
-              <Image src="/images/photoshop.png" w="200px" alt="photoshop" />
-              <Text
-                textAlign="center"
-                color="white"
-                fontWeight="bold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                Adobe Photoshop
-              </Text>
-            </VStack>
-            <VStack
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="600"
-              justify="center"
-              align="center"
-            >
-              <Image src="/images/protools.png" w="200px" alt="protools" />
-              <Text
-                textAlign="center"
-                color="white"
-                fontWeight="bold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                Avid Pro Tools
-              </Text>
-            </VStack>
-            <VStack
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-delay="700"
-              justify="center"
-              align="center"
-            >
-              <Image src="/images/3d.png" w="200px" alt="3d" />
-              <Text
-                textAlign="center"
-                color="white"
-                fontWeight="bold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                3D Max
-              </Text>
-            </VStack>
-            <VStack
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="800"
-              justify="center"
-              align="center"
-            >
-              <Image
-                src="/images/illustrator.png"
-                w="200px"
-                alt="illustrator"
-              />
-              <Text
-                textAlign="center"
-                color="white"
-                fontWeight="bold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                Adobe Illustrator
-              </Text>
-            </VStack>
-          </Grid>
+          <Service
+            heading="Offline střih"
+            text="Avid Media Composer, Adobe Premiere Pro, Final Cut Pro"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/video-editing_bfiutj.jpg"
+          />
+
+          <Service
+            heading="Barevné korekce"
+            text="DaVinci Resolve Studio"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/color_gafyjl.jpg"
+            reverse
+          />
+
+          <Service
+            heading="VFX and Motion Graphic"
+            text="Adobe After Effects, Nuke"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/vfx_qle3ru.jpg"
+          />
+
+          <Service
+            heading="Grafické práce"
+            text="Adobe Illustrator, Adobe Photoshop"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/grafic_sssqjt.jpg"
+            reverse
+          />
+
+          <Service
+            heading="Animace"
+            text="3D Max"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/animation_o5kkkw.jpg"
+          />
+
+          <Service
+            heading="Zvuková postprodukce"
+            text="Avid Pro Tools"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/sound_jymab1.jpg"
+            reverse
+          />
+
+          <Service
+            heading="Dramaturgie"
+            text="Střihová dramaturgie"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/dramaturgy_hriwce.jpg"
+          />
+
+          <Service
+            heading="Workshopy"
+            text="Offline střih, Barevné korekce"
+            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/workshop_xfstc3.jpg"
+            reverse
+          />
         </VStack>
-      </VStack>
-    </Flex>
+      </Flex>
+    </>
   );
 }

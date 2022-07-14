@@ -6,135 +6,95 @@ import {
   Flex,
   Text,
   HStack,
+  Grid,
 } from "@chakra-ui/react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { AiFillPhone, AiFillMail } from "react-icons/ai";
+import { ContactGridItem } from "../../components/ContactGridItem";
 
-export default function Kontakt() {
+export default function Kontakt2Page() {
   return (
     <>
-      <style jsx>
+      <style jsx global>
         {`
-          * {
-            overflow-y: hidden;
+          .contact-grid {
+            grid-template-columns: repeat(3, 1fr);
+          }
+
+          @media screen and (max-width: 1150px) {
+            .contact-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
+            .last-one {
+              grid-column-start: 1;
+              grid-column-end: 3;
+              grid-row-start: 2;
+              justify-self: center;
+              width: 350px;
+            }
+          }
+
+          @media screen and (max-width: 800px) {
+            .contact-grid {
+              grid-template-columns: repeat(1, 1fr);
+            }
+
+            .last-one {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 3;
+            }
           }
         `}
       </style>
       <Flex
         w="100%"
         minH="100vh"
-        pt="110px"
-        gap="100px"
-        pb="60px"
+        pt={["80px", "80px", "100px", "100px"]}
         position="absolute"
         zIndex="2"
         overflow="hidden"
+        flexDir="column"
+        pb="20px"
       >
-        <VStack w="100%" h="100%" gap="20px" justify="center">
-          <Heading
-            color="white"
-            fontWeight="800"
-            fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
-            letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
+        <Heading
+          color="white"
+          w="100%"
+          textAlign="center"
+          fontWeight="800"
+          fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
+          letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
+          my="20px"
+        >
+          Kontakt
+        </Heading>
+        <Flex justify="center" w="100%" h="100%" mt="20px">
+          <Grid
+            gridTemplateColumns="repeat(3, 1fr)"
+            columnGap="25px"
+            rowGap="25px"
+            className="contact-grid"
+            px="10px"
           >
-            Kontakt
-          </Heading>
-          <Flex
-            gap={["60px", "20px", "20px", "20px"]}
-            pb="10px"
-            px="20px"
-            align="flex-start"
-            h="max-content"
-            flexDir={["column", "row", "row", "row"]}
-          >
-            <VStack data-aos="fade-down" w="100%" h="100%">
-              <Image src="/images/lukas.png" width="180px" alt="lukas mracek" />
-              <Heading
-                color="white"
-                textAlign="center"
-                fontSize={["1.2rem", "1.5rem", "2rem", "2rem"]}
-                fontWeight="800"
-              >
-                Lukáš Mráček
-              </Heading>
-              <Text
-                color="white"
-                textAlign="center"
-                fontWeight="semibold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                Producer Executive Producer
-              </Text>
-            </VStack>
-            <VStack data-aos="fade-up" w="100%" h="100%">
-              <Image
-                src="/images/ondrej.png"
-                width="180px"
-                alt="ondrej belica"
-              />
-              <Heading
-                color="white"
-                textAlign="center"
-                fontSize={["1.2rem", "1.5rem", "2rem", "2rem"]}
-                fontWeight="800"
-              >
-                Ondřej Belica
-              </Heading>
-              <Text
-                color="white"
-                textAlign="center"
-                fontWeight="semibold"
-                fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-              >
-                DOP Postproduction supervisor
-              </Text>
-            </VStack>
-          </Flex>
-
-          <VStack w="100%">
-            <Text
-              color="white"
-              w="50%"
-              textAlign="center"
-              fontWeight="semibold"
-              fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-            >
-              Jste připraveni dělat další projekt s náma? Zavolejte anebo nám
-              napište email a my se vám co nejdříve ozveme!
-            </Text>
-
-            <Flex
-              maxW="500px"
-              w="100%"
-              justifyContent="center"
-              gap={["20px", "20%", "20%", "20%"]}
-              pt="25px"
-            >
-              <VStack gap="10px" h="100%" justify="flex-start" w="100%">
-                <AiFillPhone color="white" size="80px" />
-                <Text
-                  color="white"
-                  textAlign="center"
-                  fontWeight="semibold"
-                  fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-                >
-                  +420 775 322 101
-                </Text>
-              </VStack>
-              <VStack gap="10px" h="100%" justify="flex-start" w="100%">
-                <AiFillMail color="white" size="80px" />
-                <Text
-                  color="white"
-                  textAlign="center"
-                  fontWeight="semibold"
-                  fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
-                >
-                  info@nyla.cz
-                </Text>
-              </VStack>
-            </Flex>
-          </VStack>
-        </VStack>
+            <ContactGridItem
+              src="https://www.nyla.cz/assets/img/lukas.png"
+              heading="Lukáš Mráček"
+              text="Producer Executive Producer"
+            />
+            <ContactGridItem
+              src="	https://www.nyla.cz/assets/img/tomas.png"
+              heading="Tomáš Hruška"
+              text="Scriptwriter Director Dramaturge"
+            />
+            <ContactGridItem
+              src="	https://www.nyla.cz/assets/img/ondrej.png"
+              heading="Ondřej Belica"
+              text="DOP Postproduction supervisor"
+              last
+            />
+          </Grid>
+        </Flex>
       </Flex>
     </>
   );

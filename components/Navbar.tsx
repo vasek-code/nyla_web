@@ -90,7 +90,7 @@ export default function Navbar() {
                 </Button>
                 <Button
                   variant="link"
-                  color="white"
+                  color={router.route === "/postprodukce" ? "#2792c2" : "white"}
                   fontSize={["20px", "20px", "25px", "25px"]}
                   fontWeight="bold"
                   onClick={() => {
@@ -101,7 +101,7 @@ export default function Navbar() {
                 </Button>
                 <Button
                   variant="link"
-                  color="white"
+                  color={router.route === "/kontakt" ? "#2792c2" : "white"}
                   fontSize={["20px", "20px", "25px", "25px"]}
                   fontWeight="bold"
                   onClick={() => {
@@ -170,7 +170,7 @@ export default function Navbar() {
             display={["none", "none", "flex", "flex"]}
           >
             <Button
-              color="white"
+              color={router.route === "/" ? "#2792c2" : "white"}
               variant="link"
               fontSize="17px"
               onClick={() => {
@@ -180,7 +180,7 @@ export default function Navbar() {
               PORTFOLIO
             </Button>
             <Button
-              color="white"
+              color={router.route === "/sluzby" ? "#2792c2" : "white"}
               variant="link"
               fontSize="17px"
               onClick={() => {
@@ -190,7 +190,7 @@ export default function Navbar() {
               SLUŽBY
             </Button>
             <Button
-              color="white"
+              color={router.route === "/postprodukce" ? "#2792c2" : "white"}
               variant="link"
               fontSize="17px"
               onClick={() => {
@@ -200,7 +200,7 @@ export default function Navbar() {
               POSTPRODUKCE
             </Button>
             <Button
-              color="white"
+              color={router.route === "/kontakt" ? "#2792c2" : "white"}
               variant="link"
               fontSize="17px"
               onClick={() => {

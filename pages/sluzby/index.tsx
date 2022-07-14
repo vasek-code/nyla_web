@@ -1,87 +1,87 @@
-import { Heading, VStack, Image, Flex, Text } from "@chakra-ui/react";
+import {
+  Divider,
+  Heading,
+  VStack,
+  Image,
+  Flex,
+  Text,
+  HStack,
+  Grid,
+  Button,
+  Box,
+  GridItem,
+} from "@chakra-ui/react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import Background from "../../components/Background";
-import { Service } from "../../components/Service";
+import { ServicesGridItem } from "../../components/ServicesGridItem";
 
-export default function Sluzby() {
-  useEffect(() => {}, []);
-
+export default function Postprodukce() {
   return (
     <>
-      <Flex
+      <style jsx global>
+        {`
+          .service-grid {
+            grid-template-columns: repeat(4, 1fr);
+          }
+
+          @media screen and (max-width: 1216px) {
+            .service-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          @media screen and (max-width: 596px) {
+            .service-grid {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+        `}
+      </style>
+      <Box
         w="100%"
         minH="100vh"
-        pt="110px"
-        gap="100px"
-        pb="60px"
+        pt={["80px", "80px", "100px", "100px"]}
         position="absolute"
         zIndex="2"
-        justify="center"
+        overflow="hidden"
+        pb="20px"
       >
-        <VStack gap="30px" maxW="1200px" px="20px" w="100%">
-          <Heading
-            color="white"
-            fontWeight="800"
-            fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
-            letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
+        <Flex w="100%" h="100%" flexDir="column" align="center">
+          <Text
             textAlign="center"
+            fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
+            fontWeight="800"
+            letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
+            w="100%"
+            my="15px"
           >
             Naše služby
-          </Heading>
-
-          <Service
-            heading="Offline střih"
-            text="Avid Media Composer, Adobe Premiere Pro, Final Cut Pro"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/video-editing_bfiutj.jpg"
-          />
-
-          <Service
-            heading="Barevné korekce"
-            text="DaVinci Resolve Studio"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/color_gafyjl.jpg"
-            reverse
-          />
-
-          <Service
-            heading="VFX and Motion Graphic"
-            text="Adobe After Effects, Nuke"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/vfx_qle3ru.jpg"
-          />
-
-          <Service
-            heading="Grafické práce"
-            text="Adobe Illustrator, Adobe Photoshop"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/grafic_sssqjt.jpg"
-            reverse
-          />
-
-          <Service
-            heading="Animace"
-            text="3D Max"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/animation_o5kkkw.jpg"
-          />
-
-          <Service
-            heading="Zvuková postprodukce"
-            text="Avid Pro Tools"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/sound_jymab1.jpg"
-            reverse
-          />
-
-          <Service
-            heading="Dramaturgie"
-            text="Střihová dramaturgie"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/dramaturgy_hriwce.jpg"
-          />
-
-          <Service
-            heading="Workshopy"
-            text="Offline střih, Barevné korekce"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/workshop_xfstc3.jpg"
-            reverse
-          />
-        </VStack>
-      </Flex>
+          </Text>
+          <Flex w="100%" h="fill" justify="center" align="center" mt="20px">
+            <Grid rowGap="20px" columnGap="30px" className="service-grid">
+              <ServicesGridItem
+                heading="COPYWRITING"
+                text="Print, Online, Video"
+                src="https://www.nyla.cz/assets/img/icons/development.png"
+              />
+              <ServicesGridItem
+                heading="VIDEO MARKETING"
+                text="Nápad, Výroba, Digitál"
+                src="https://www.nyla.cz/assets/img/icons/camera.png"
+              />
+              <ServicesGridItem
+                heading="PRODUCTION SERVICE"
+                text="AVD, Eventy, Workshopy"
+                src="https://www.nyla.cz/assets/img/icons/executive.png"
+              />
+              <ServicesGridItem
+                heading="POSTPRODUCTION"
+                text="Graphics, Offline, Color Correction, Sound, VFX"
+                src="https://www.nyla.cz/assets/img/icons/postproduction.png"
+              />
+            </Grid>
+          </Flex>
+        </Flex>
+      </Box>
     </>
   );
 }
