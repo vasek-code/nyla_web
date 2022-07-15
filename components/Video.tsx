@@ -18,6 +18,7 @@ export default function Video({
   reverse?: boolean;
 }) {
   const [opened, setOpened] = useState(false);
+  const headingFontSize = ["1.5rem", "1.8rem", "2rem", "2.3rem", "3rem"];
 
   const handleClick = () => {
     setOpened(!opened);
@@ -41,7 +42,7 @@ export default function Video({
                 <Heading
                   color="white"
                   fontWeight="800"
-                  fontSize={["1.8rem", "2.5rem", "3rem", "3.5rem"]}
+                  fontSize={headingFontSize}
                   letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
                   textAlign="center"
                   data-aos="fade-up"
@@ -74,7 +75,7 @@ export default function Video({
                 <Heading
                   color="white"
                   fontWeight="800"
-                  fontSize={["1.8rem", "2.5rem", "3rem", "3.5rem"]}
+                  fontSize={headingFontSize}
                   letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
                   textAlign="center"
                   data-aos="fade-up"
@@ -116,7 +117,7 @@ export default function Video({
                 <Heading
                   color="white"
                   fontWeight="800"
-                  fontSize={["1.8rem", "2.5rem", "3rem", "3.5rem"]}
+                  fontSize={headingFontSize}
                   letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
                   textAlign="center"
                   data-aos="fade-up"
@@ -143,7 +144,7 @@ export default function Video({
                 <Heading
                   color="white"
                   fontWeight="800"
-                  fontSize={["1.8rem", "2.5rem", "3rem", "3.5rem"]}
+                  fontSize={headingFontSize}
                   letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
                   textAlign="center"
                   data-aos="fade-up"

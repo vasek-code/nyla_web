@@ -36,7 +36,7 @@ export const CompanyCard: React.FC<{
             }}
           >
             <Text
-              fontSize={["1.2rem", "1.2rem", "1.5rem", "1.5rem"]}
+              fontSize={["1.2rem", "1.2rem", "1.3rem", "1.3rem"]}
               fontWeight="600"
             >
               {text}
