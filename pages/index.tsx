@@ -9,6 +9,7 @@ import {
   VStack,
   Divider,
   Grid,
+  Box,
 } from "@chakra-ui/react";
 import { BsArrowDownCircle } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
@@ -51,17 +52,16 @@ export default function Home() {
           }
         `}
       </style>
-      <Flex
+      <Box
         w="100%"
         minH="100vh"
         flexDirection="column"
         position="absolute"
         zIndex="2"
         overflowY="hidden"
-        scrollSnapType="y mandatory"
         overflow="auto"
       >
-        <Flex w="100%" h="100vh" scrollSnapAlign="start">
+        <Box w="100%" h="100vh">
           <VStack w="100%" h="100%" justify="center" align="center">
             {/* <Heading size="4xl" color="white">
               NYLA
@@ -105,7 +105,7 @@ export default function Home() {
               />
             </Flex>
           </VStack>
-        </Flex>
+        </Box>
 
         <Video
           nadpis="Two Lions To Venice"
@@ -223,7 +223,7 @@ export default function Home() {
             />
           </Grid>
         </Flex>
-      </Flex>
+      </Box>
     </>
   );
 }
