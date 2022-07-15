@@ -8,10 +8,12 @@ import {
   Container,
   VStack,
   Divider,
+  Grid,
 } from "@chakra-ui/react";
 import { BsArrowDownCircle } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
 import Video from "../components/Video";
+import { CompanyCard } from "../components/CompanyCard";
 
 export default function Home() {
   const [viewHeight, setViewHeight] = useState(0);
@@ -22,6 +24,33 @@ export default function Home() {
 
   return (
     <>
+      <style jsx global>
+        {`
+          @media (max-width: 1150px) {
+            .customers-grid {
+              grid-template-columns: repeat(4, 1fr);
+            }
+          }
+
+          @media (max-width: 920px) {
+            .customers-grid {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+
+          @media (max-width: 690px) {
+            .customers-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          @media (max-width: 460px) {
+            .customers-grid {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+        `}
+      </style>
       <Flex
         w="100%"
         minH="100vh"
@@ -124,6 +153,76 @@ export default function Home() {
           videoSrc="https://www.youtube.com/embed/zFX3F2FrIOg"
           reverse
         />
+        <Flex minH="100vh" w="100%" flexDir="column" align="center">
+          <Text
+            w="100%"
+            textAlign="center"
+            fontWeight="800"
+            fontSize={["2.5rem", "3rem", "6xl", "6xl"]}
+            letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
+            pt={["80px", "80px", "100px", "100px"]}
+          >
+            Spokojení zákazníci
+          </Text>
+          <Grid
+            p="20px"
+            gridTemplateColumns="repeat(5, 1fr)"
+            gap="20px"
+            pt="30px"
+            className="customers-grid"
+          >
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+            <CompanyCard
+              src="/images/abb-logo.svg"
+              text="ABB"
+              webSrc="https://new.abb.com/cz"
+            />
+          </Grid>
+        </Flex>
       </Flex>
     </>
   );
