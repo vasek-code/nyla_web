@@ -11,6 +11,8 @@ import Intro from "../components/Intro";
 import { Flex } from "@chakra-ui/react";
 import Background from "../components/Background";
 import "@fontsource/inter";
+import { Footer } from "../components/Footer";
+import { Wrapper } from "../components/Wrapper";
 
 function MyApp({ Component, pageProps }) {
   const [start, setStart] = useState(true);
@@ -28,7 +30,9 @@ function MyApp({ Component, pageProps }) {
         {/* {start && <Intro />} */}
         <Background />
         <Navbar />
+        {/* <Wrapper> */}
         <Component {...pageProps} />
+        {/* </Wrapper> */}
       </ChakraProvider>
     </>
   );

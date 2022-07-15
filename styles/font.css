@@ -31,7 +31,6 @@ body::-webkit-scrollbar-thumb {
 
 html {
   background: black !important;
-  scroll-snap-type: y mandatory;
 }
 
 @keyframes slidedown {

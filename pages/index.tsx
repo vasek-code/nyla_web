@@ -52,7 +52,7 @@ export default function Home() {
           }
         `}
       </style>
-      <Box
+      <Flex
         w="100%"
         minH="100vh"
         flexDirection="column"
@@ -61,7 +61,7 @@ export default function Home() {
         overflowY="hidden"
         overflow="auto"
       >
-        <Box w="100%" h="100vh">
+        <Flex w="100%" h="100vh">
           <VStack w="100%" h="100%" justify="center" align="center">
             {/* <Heading size="4xl" color="white">
               NYLA
@@ -105,7 +105,7 @@ export default function Home() {
               />
             </Flex>
           </VStack>
-        </Box>
+        </Flex>
 
         <Video
           nadpis="Two Lions To Venice"
@@ -153,7 +153,7 @@ export default function Home() {
           videoSrc="https://www.youtube.com/embed/zFX3F2FrIOg"
           reverse
         />
-        <Flex minH="100vh" w="100%" flexDir="column" align="center">
+        <Flex minH="850px" w="100%" flexDir="column" align="center">
           <Text
             w="100%"
             textAlign="center"
@@ -223,7 +223,7 @@ export default function Home() {
             />
           </Grid>
         </Flex>
-      </Box>
+      </Flex>
     </>
   );
 }
