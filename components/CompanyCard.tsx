@@ -35,8 +35,11 @@ export const CompanyCard: React.FC<{
               background: "var(--chakra-colors-whiteAlpha-400)",
             }}
           >
-            <Text fontSize="1.5rem" fontWeight="600">
-              {text || "ahoj"}
+            <Text
+              fontSize={["1.2rem", "1.2rem", "1.5rem", "1.5rem"]}
+              fontWeight="600"
+            >
+              {text}
             </Text>
           </Button>
         </a>

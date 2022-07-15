@@ -178,8 +178,8 @@ export default function Home() {
             />
             <CompanyCard
               src="/images/alef.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="ALEF"
+              webSrc="https://www.alef.com/cz/"
             />
             <CompanyCard
               src="/images/dolnipocernice.png"
@@ -188,38 +188,38 @@ export default function Home() {
             />
             <CompanyCard
               src="/images/fudokan.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="FUDOKAN"
+              webSrc="https://www.fudokan.cz/"
             />
             <CompanyCard
               src="/images/meatfactory.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="Meet Factory"
+              webSrc="http://www.meetfactory.cz/"
             />
             <CompanyCard
               src="/images/pragueboats.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="PRAGUE BOATS"
+              webSrc="https://www.prague-boats.cz/"
             />
             <CompanyCard
               src="/images/prozeta.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="PROZETA"
+              webSrc="https://www.prozeta.eu/"
             />
             <CompanyCard
               src="/images/remark.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="REMA93"
+              webSrc="http://www.studiorema93.cz/"
             />
             <CompanyCard
               src="/images/verahampl.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="VERA HAMPL"
+              webSrc="https://www.vharchitects.com/"
             />
             <CompanyCard
               src="/images/wavin.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="WAVIN"
+              webSrc="https://www.wavinekoplastik.com/"
             />
           </Grid>
         </Flex>
