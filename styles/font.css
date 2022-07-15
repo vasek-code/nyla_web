@@ -32,3 +32,27 @@ body::-webkit-scrollbar-thumb {
 html {
   background: black !important;
 }
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-220px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translateY(80px);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(80px);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateY(-220px);
+    animation-timing-function: ease-out;
+  }
+}

@@ -13,6 +13,7 @@ import React, { useRef, useState } from "react";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
+import { NavbarMenu } from "./NavbarMenu";
 
 export default function Navbar() {
   const [opened, setOpened] = useState(false);
@@ -28,13 +29,13 @@ export default function Navbar() {
     <>
       <Flex
         h={["80px", "80px", "100px", "100px"]}
-        backgroundColor="#202124"
         w="100%"
         position="fixed"
         boxShadow="0px 0.5px 17px 3px #000000"
         zIndex="100"
       >
-        {opened && (
+        {opened && <NavbarMenu opened={opened} />}
+        {/* {opened && (
           <Flex
             w="100%"
             h="100vh"
@@ -135,7 +136,7 @@ export default function Navbar() {
               </VStack>
             </VStack>
           </Flex>
-        )}
+        )} */}
 
         <HStack
           w="100%"
@@ -143,6 +144,9 @@ export default function Navbar() {
           align="center"
           justify="space-between"
           pr="20px"
+          position="absolute"
+          zIndex="30"
+          backgroundColor="#202124"
         >
           <Image
             src="/images/logo.png"

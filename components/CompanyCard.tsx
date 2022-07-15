@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { Flex, GridItem, Text, Button } from "@chakra-ui/react";
+import { Flex, GridItem, Text, Button, Image } from "@chakra-ui/react";
 
 export const CompanyCard: React.FC<{
   src: string;
@@ -17,7 +16,7 @@ export const CompanyCard: React.FC<{
       borderRadius="10px"
     >
       <Flex h="60%" w="100%" justify="center" align="center">
-        <Image width="100%" layout="fixed" height="100%" src={src} alt={src} />
+        <Image width="130px" src={src} alt={text} />
       </Flex>
       <Flex
         h="40%"

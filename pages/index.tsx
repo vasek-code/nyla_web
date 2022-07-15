@@ -172,52 +172,52 @@ export default function Home() {
             className="customers-grid"
           >
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/abb.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/alef.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/dolnipocernice.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/fudokan.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/meatfactory.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/pragueboats.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/prozeta.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/remark.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/verahampl.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
             <CompanyCard
-              src="/images/abb-logo.svg"
+              src="/images/wavin.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
             />
