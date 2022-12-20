@@ -108,50 +108,50 @@ export default function Home() {
         </Flex>
 
         <Video
-          nadpis="Two Lions To Venice"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
-          src="https://i.vimeocdn.com/video/780545027-208775626df8236030ab47d46dcd10cc82295b40669ead4540eda450dc6869d8-d?mw=1500"
-          videoSrc="https://player.vimeo.com/video/334302748"
+          nadpis="CzechELib"
+          text="Série videí o činnosti Národního centra pro elektronické informační zdroje"
+          src="images/ntk/1.png"
+          videoSrc="https://www.youtube.com/embed/ByA9Y7Bv9Ss"
           reverse
+          ntk
         />
         <Video
           nadpis="A MARRIAGE"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
           src="https://i.vimeocdn.com/video/936897097-884e67980ff15aecd4f8df7d9d6f012495faa80458fa2aa6647d26ffb4d51d2f-d?mw=1500"
           videoSrc="https://player.vimeo.com/video/233473364"
+          ntk={false}
+          text="Kamera a postprodukce"
         />
         <Video
           nadpis="Lucie Bílá - Mám ráda život"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
           src="https://i.ytimg.com/vi_webp/wR3v1ZfcWzM/sddefault.webp"
           videoSrc="https://www.youtube.com/embed/wR3v1ZfcWzM"
           reverse
+          text="Obrazová postprodukce"
         />
         <Video
-          nadpis="A MARRIAGE"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
+          nadpis="The Last Lesson"
           src="https://i.vimeocdn.com/video/764539463-142b091204d67f2dcca5b99d62a8f18e751b284c62801b19416e7ac407780bdb-d?mw=1500"
           videoSrc="https://player.vimeo.com/video/320433440"
+          text="Kompletní produkce a postprodukce"
         />
         <Video
           nadpis="Exclusive Tours"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
           src="	https://i.ytimg.com/vi_webp/cWZfMEXvVPA/sddefault.webp"
           videoSrc="https://www.youtube.com/embed/cWZfMEXvVPA"
           reverse
         />
         <Video
           nadpis="Girl Therapy - New End"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
           src="https://i.vimeocdn.com/video/567298298-73b95fa179ca63abb1188dd8983128a97ade5ea09d6a2d15a4c4ce7148f659b7-d?mw=1500"
           videoSrc="https://player.vimeo.com/video/163822866"
         />
         <Video
           nadpis="Volvo Trucks 20 let"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Integer lacinia. Fusce consectetuer risus a nunc. Aliquam ante. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus ac leo pretium faucibus. Etiam quis quam. Vestibulum fermentum tortor id mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus rhoncus."
-          src="https://i.ytimg.com/vi_webp/zFX3F2FrIOg/sddefault.webp"
+          src="images/volvo_thumbnail.png"
           videoSrc="https://www.youtube.com/embed/zFX3F2FrIOg"
           reverse
+          text="Kompletní produkce a postprodukce"
         />
         <Flex minH="850px" w="100%" flexDir="column" align="center">
           <Text
@@ -162,7 +162,7 @@ export default function Home() {
             letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
             pt={["80px", "80px", "100px", "100px"]}
           >
-            Spokojení zákazníci
+            Naši klienti
           </Text>
           <Grid
             p="20px"
@@ -183,8 +183,8 @@ export default function Home() {
             />
             <CompanyCard
               src="/images/dolnipocernice.png"
-              text="ABB"
-              webSrc="https://new.abb.com/cz"
+              text="PDP"
+              webSrc="https://praha-dolnipocernice.cz/"
             />
             <CompanyCard
               src="/images/fudokan.png"
