@@ -110,7 +110,7 @@ export default function Home() {
         <Video
           nadpis="CzechELib"
           text="Série videí o činnosti Národního centra pro elektronické informační zdroje"
-          src="images/ntk/1.png"
+          src="images/ntkthumbnail.png"
           videoSrc="https://www.youtube.com/embed/ByA9Y7Bv9Ss"
           reverse
           ntk
@@ -124,7 +124,7 @@ export default function Home() {
         />
         <Video
           nadpis="Lucie Bílá - Mám ráda život"
-          src="https://i.ytimg.com/vi_webp/wR3v1ZfcWzM/sddefault.webp"
+          src="images/lucie.png"
           videoSrc="https://www.youtube.com/embed/wR3v1ZfcWzM"
           reverse
           text="Obrazová postprodukce"
@@ -137,7 +137,7 @@ export default function Home() {
         />
         <Video
           nadpis="Exclusive Tours"
-          src="	https://i.ytimg.com/vi_webp/cWZfMEXvVPA/sddefault.webp"
+          src="images/more.png"
           videoSrc="https://www.youtube.com/embed/cWZfMEXvVPA"
           reverse
         />
@@ -152,6 +152,39 @@ export default function Home() {
           videoSrc="https://www.youtube.com/embed/zFX3F2FrIOg"
           reverse
           text="Kompletní produkce a postprodukce"
+        />
+        <Video
+          nadpis="Kampaň Tloustneme"
+          src="https://i.vimeocdn.com/video/1331570366-14143053c416bbac5d8f3e68b6ea1d530baa0c2cfcfaa9dcf4c8b3c60fd1ef3c-d?mw=1500"
+          videoSrc="https://player.vimeo.com/video/659293949"
+          text="Série spotů s Martinem Zounarem a videomedailonky s příběhy pacientů.
+          Kompletní produkce"
+        />
+        <Video
+          nadpis="D.Y.K. - You Don't Know Who I Am"
+          src="https://i.ytimg.com/vi/G-ykGG6ZJ_0/sddefault.jpg"
+          videoSrc="https://www.youtube.com/embed/G-ykGG6ZJ_0"
+          text="Color correction, Color grading"
+          reverse
+        />
+        <Video
+          nadpis="ABB - EGO-N"
+          src="https://i.vimeocdn.com/video/429633564-ad351e8154183294f8e09f1ff5acad35fc8fa9c0938023354f5f3569d8cbee2d-d?mw=1500"
+          videoSrc="https://player.vimeo.com/video/61793279"
+          text="Reklamní spot pro společnost ABB ve spolupráci s reklamní agenturou Studio Rema 93"
+        />
+        <Video
+          nadpis="Wavin Ecoplastik"
+          src="https://i.vimeocdn.com/video/567624511-f4b2485ef97ff9e3afb67e94039152b21fc59c676e9d60b201d956af9a7e474e-d?mw=1500"
+          videoSrc="https://player.vimeo.com/video/110729762"
+          text="Kompletní produkce a postprodukce"
+          reverse
+        />
+        <Video
+          nadpis="Two Lions to Venice"
+          src="https://image.pmgstatic.com/cache/resized/w1989/files/images/film/photos/165/816/165816139_c9bf71.jpg"
+          videoSrc="https://video.pmgstatic.com/files/videos/157/776/157776122/165071176_9b316a.mp4"
+          text="Střih a kompletní postprodukce"
         />
         <Flex minH="850px" w="100%" flexDir="column" align="center">
           <Text
