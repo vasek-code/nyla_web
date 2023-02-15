@@ -13,6 +13,7 @@ import Background from "../components/Background";
 import "@fontsource/inter";
 import { Footer } from "../components/Footer";
 import { Wrapper } from "../components/Wrapper";
+import ScrollToTopButton from "../components/ScrollToTop";
 
 function MyApp({ Component, pageProps }) {
   const [start, setStart] = useState(true);
@@ -33,6 +34,7 @@ function MyApp({ Component, pageProps }) {
         {/* <Wrapper> */}
         <Component {...pageProps} />
         {/* </Wrapper> */}
+        <ScrollToTopButton />
       </ChakraProvider>
     </>
   );

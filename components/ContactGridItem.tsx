@@ -25,7 +25,9 @@ export const ContactGridItem: React.FC<{
         <Flex justify="center" align="center">
           <Image
             w={["120px", "160px", "160px", "160px"]}
+            h={["120px", "160px", "160px", "160px"]}
             src={src}
+            borderRadius="50%"
             alt={heading}
           />
         </Flex>

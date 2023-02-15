@@ -38,7 +38,7 @@ export default function Sluzby() {
           <Service
             heading="Barevné korekce"
             text="DaVinci Resolve Studio"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/color_gafyjl.jpg"
+            src="images/new/color-min.jpg"
             reverse
           />
 
@@ -51,14 +51,14 @@ export default function Sluzby() {
           <Service
             heading="Grafické práce"
             text="Adobe Illustrator, Adobe Photoshop"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/grafic_sssqjt.jpg"
+            src="images/new/grafic-min.jpg"
             reverse
           />
 
           <Service
             heading="Animace"
             text="3D Max"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/animation_o5kkkw.jpg"
+            src="images/new/animation-min.jpg"
           />
 
           <Service
@@ -71,7 +71,7 @@ export default function Sluzby() {
           <Service
             heading="Dramaturgie"
             text="Střihová dramaturgie"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/dramaturgy_hriwce.jpg"
+            src="images/new/dramaturgy-min.jpg"
           />
 
           <Service

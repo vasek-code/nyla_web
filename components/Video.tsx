@@ -61,20 +61,6 @@ export default function Video({
                   {nadpis}
                 </Heading>
 
-                {!ntk && (
-                  <Text
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                    color="white"
-                    textAlign="center"
-                    fontWeight="semibold"
-                    fontSize="2xl"
-                    letterSpacing="0px"
-                  >
-                    {text}
-                  </Text>
-                )}
-
                 {ntk && text && (
                   <Flex
                     data-aos="fade-up"
@@ -141,6 +127,20 @@ export default function Video({
                       Otevřený přístup k vědeckým publikacím - Open Access
                     </Text>
                   </Flex>
+                )}
+
+                {!ntk && (
+                  <Text
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    color="white"
+                    textAlign="center"
+                    fontWeight="semibold"
+                    fontSize="2xl"
+                    letterSpacing="0px"
+                  >
+                    {text}
+                  </Text>
                 )}
               </VStack>
               <Flex justify="center" align="center" w="50%">
@@ -239,7 +239,26 @@ export default function Video({
                   </Flex>
                 )}
 
-                {text && <Flex>{text}</Flex>}
+                {text && !ntk && (
+                  <Flex
+                    color="white"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    textAlign="center"
+                    fontWeight="semibold"
+                    fontSize={["18px", "18px", "18px", "22px"]}
+                    letterSpacing="0px"
+                    flexDir="column"
+                    gap="5px"
+                  >
+                    <Text
+                      fontSize={["20px", "20px", "20px", "25px"]}
+                      paddingBottom="8px"
+                    >
+                      {text}
+                    </Text>
+                  </Flex>
+                )}
               </VStack>
               <Flex justify="center" align="center">
                 <Flex position="absolute" justify="center" cursor="pointer">
@@ -308,9 +327,26 @@ export default function Video({
                   {nadpis}
                 </Heading>
 
-                {/* <Text color="white" textAlign="center">
-              {text}
-            </Text> */}
+                {text && !ntk && (
+                  <Flex
+                    color="white"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    textAlign="center"
+                    fontWeight="semibold"
+                    fontSize={["18px", "18px", "18px", "22px"]}
+                    letterSpacing="0px"
+                    flexDir="column"
+                    gap="5px"
+                  >
+                    <Text
+                      fontSize={["20px", "20px", "20px", "25px"]}
+                      paddingBottom="8px"
+                    >
+                      {text}
+                    </Text>
+                  </Flex>
+                )}
               </VStack>
               <Flex justify="center" align="center">
                 <Flex position="absolute" justify="center" cursor="pointer">

@@ -104,8 +104,8 @@ export default function Kontakt2Page() {
               text="Producer Executive Producer"
             />
             <ContactGridItem
-              src="/images/tomas.png"
-              heading="Tomáš Hruška"
+              src="/images/marek.jpg"
+              heading="Marek Procházka"
               text="Scriptwriter Director Dramaturge"
             />
             <ContactGridItem
