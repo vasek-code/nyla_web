@@ -72,24 +72,23 @@ export default function Kontakt2Page() {
           Kontakt
         </Heading>
         <Flex w="100%" justify="center" py="30px">
-          <Flex
+          {/* <Flex
             justify="center"
             maxW="620px"
             background="whiteAlpha.100"
             p="10px"
             borderRadius="10px"
             border="1px solid gray"
+          > */}
+          <Text
+            textAlign="center"
+            fontSize={["1rem", "1.1rem", "1.2rem", "1.2rem"]}
+            fontWeight="600"
           >
-            <Text
-              textAlign="center"
-              fontSize={["1rem", "1.1rem", "1.2rem", "1.2rem"]}
-              mb="8px"
-              fontWeight="600"
-            >
-              Jste připraveni dělat další projekt s náma? <br /> Zavolejte anebo
-              nám napište email a my se vám co nejdříve ozveme!
-            </Text>
-          </Flex>
+            Jste připraveni dělat další projekt s námi? <br /> Zavolejte anebo
+            nám napište a my se vám co nejdříve ozveme!
+          </Text>
+          {/* </Flex> */}
         </Flex>
         <Flex justify="center" w="100%" h="100%">
           <Grid
@@ -101,17 +100,17 @@ export default function Kontakt2Page() {
             <ContactGridItem
               src="/images/lukas.png"
               heading="Lukáš Mráček"
-              text="Producer Executive Producer"
+              text="Executive producer"
             />
             <ContactGridItem
               src="/images/marek.jpg"
               heading="Marek Procházka"
-              text="Scriptwriter Director Dramaturge"
+              text="Creative director"
             />
             <ContactGridItem
               src="/images/ondrej.png"
               heading="Ondřej Belica"
-              text="DOP Postproduction supervisor"
+              text="Director of photography"
               last
             />
           </Grid>

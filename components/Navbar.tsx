@@ -211,7 +211,7 @@ export default function Navbar() {
             >
               KONTAKT
             </Button>
-            <Flex gap="20px">
+            {/* <Flex gap="20px">
               <a
                 href="https://www.instagram.com/nylacreativeagency"
                 target="_blank"
@@ -232,7 +232,7 @@ export default function Navbar() {
                   aria-label="facebook"
                 />
               </a>
-            </Flex>
+            </Flex> */}
           </HStack>
         </HStack>
       </Flex>

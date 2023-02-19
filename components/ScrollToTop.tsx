@@ -13,25 +13,24 @@ function ScrollToTopButton() {
   return (
     <Flex
       style={{
-        position: "fixed",
-        bottom: 0,
-        right: 0,
-        cursor: "pointer",
         zIndex: 100000,
       }}
-      padding="13px"
+      w="100%"
+      justify="center"
+      padding="20px"
     >
       <IconButton
         aria-label="scroll to top"
         className="scroll-to-top"
         onClick={scrollToTop}
-        icon={<BiArrowToTop size="25px" color="black" />}
+        icon={<BiArrowToTop size="30px" color="black" />}
         background="whiteAlpha.800"
         _hover={{
           background: "whiteAlpha.600",
         }}
-        w="50px"
-        h="50px"
+        w="65px"
+        h="65px"
+        size="lg"
       >
         Scroll to Top
       </IconButton>

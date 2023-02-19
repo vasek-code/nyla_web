@@ -69,7 +69,7 @@ export const NavbarMenu: React.FC<{
               Kontakt
             </Button>
           </Link>
-          <Flex gap="20px" w="100%" justify="flex-start">
+          {/* <Flex gap="20px" w="100%" justify="flex-start">
             <a
               href="https://www.instagram.com/nylacreativeagency"
               target="_blank"
@@ -90,7 +90,7 @@ export const NavbarMenu: React.FC<{
                 aria-label="facebook"
               />
             </a>
-          </Flex>
+          </Flex> */}
         </Flex>
       </Flex>
     </>

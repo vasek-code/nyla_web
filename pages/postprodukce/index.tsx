@@ -18,7 +18,7 @@ export default function Sluzby() {
         zIndex="2"
         justify="center"
       >
-        <VStack gap="30px" maxW="1200px" px="20px" w="100%">
+        <VStack gap="30px" maxW="1200px" px="20px" w="100%" pt="15px">
           <Heading
             color="white"
             fontWeight="800"
@@ -28,6 +28,14 @@ export default function Sluzby() {
           >
             Postprodukce
           </Heading>
+
+          <Text textAlign="center" fontSize="20px">
+            V našem postprodukčním Studiu za komínem vám poskytneme zázemí na
+            míru pro váš projekt. Od barevných korekcí krátkého reklamního spotu
+            až po kompletní postprodukci celovečerního filmu.
+          </Text>
+
+          <Image src="images/logost.svg" width="200px" />
 
           <Service
             heading="Offline střih"

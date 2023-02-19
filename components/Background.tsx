@@ -219,7 +219,7 @@ export default function Background() {
       <div
         className="background"
         style={{
-          opacity: "0.5",
+          opacity: "0.2",
           background: "black",
         }}
       >

@@ -12,11 +12,26 @@ import {
   GridItem,
 } from "@chakra-ui/react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { BiPlay } from "react-icons/bi";
 import { ServicesGridItem } from "../../components/ServicesGridItem";
+import Video from "../../components/Video";
+import { VideoFrame } from "../../components/VideoFrame";
 
 export default function Postprodukce() {
+  const [opened, setOpened] = useState(false);
+
+  function handleClick() {
+    setOpened(!opened);
+  }
+
   return (
     <>
+      {opened && (
+        <VideoFrame
+          handleClick={handleClick}
+          src="https://player.vimeo.com/video/235535760?h=312f67fe22"
+        />
+      )}
       <style jsx global>
         {`
           .service-grid {
@@ -86,15 +101,29 @@ export default function Postprodukce() {
                 src="/images/postproduction.png"
               />
             </Grid>
-            <Flex w="full" justify="center" pt="20px">
-              <iframe
-                src="https://player.vimeo.com/video/235535760?h=312f67fe22"
-                width="640"
-                height="360"
-                frameBorder="0"
-                allow="autoplay; fullscreen;"
-                allowFullScreen
-              ></iframe>
+            <Flex maxW="600px" justify="center" pt="20px" flexDir="column">
+              <Text
+                fontSize="30px"
+                fontWeight="600"
+                textAlign="center"
+                py="10px"
+              >
+                Showreel
+              </Text>
+
+              <Flex justify="center" align="center">
+                <Flex
+                  position="absolute"
+                  justify="center"
+                  cursor="pointer"
+                  onClick={() => {
+                    handleClick();
+                  }}
+                >
+                  <BiPlay color="white" size="100px" />
+                </Flex>
+                <Image w="100%" src="images/ntkthumbnail2.png" />
+              </Flex>
             </Flex>
           </Flex>
         </Flex>
