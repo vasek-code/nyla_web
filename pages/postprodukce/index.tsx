@@ -1,6 +1,7 @@
 import { Heading, VStack, Image, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Background from "../../components/Background";
+import ScrollToTopButton from "../../components/ScrollToTop";
 import { Service } from "../../components/Service";
 
 export default function Sluzby() {
@@ -88,6 +89,7 @@ export default function Sluzby() {
             src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/workshop_xfstc3.jpg"
             reverse
           />
+          <ScrollToTopButton />
         </VStack>
       </Flex>
     </>

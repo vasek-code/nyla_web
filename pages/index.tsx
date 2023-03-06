@@ -88,9 +88,10 @@ export default function Home() {
                 fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
                 fontWeight="500"
               >
-                Jsme tu pro vás už od roku 2011. Zajišťujeme vývoj a výrobu
-                audiovizuálních děl pro komunikační, digitální a eventové
-                agentury, ale i přímo pro klienty.
+                Jsme tu pro vás už od roku 2011. <br />
+                Zajišťujeme vývoj a výrobu audiovizuálních děl
+                <br /> pro komunikační, digitální a eventové agentury, ale i
+                přímo pro klienty.
               </Text>
             </Flex>
             <Flex pt="20px">
@@ -111,37 +112,24 @@ export default function Home() {
 
         <Video
           nadpis="CzechELib"
-          text="Série videí o činnosti Národního centra pro elektronické informační zdroj.
+          text="Série videí o činnosti Národního centra pro elektronické informační zdroje
           Kompletní vývoj, produkce a postprodukce"
           src="images/ntkthumbnail.png"
           videoSrc="https://www.youtube.com/embed/ByA9Y7Bv9Ss"
-        />
-        <Video
-          nadpis="Kampaň Tloustneme"
-          src="https://i.vimeocdn.com/video/1331570366-14143053c416bbac5d8f3e68b6ea1d530baa0c2cfcfaa9dcf4c8b3c60fd1ef3c-d?mw=1500"
-          videoSrc="https://www.youtube.com/embed/FZ4_ydyv-WA"
-          text="Série spotů s Martinem Zounarem a videomedailonky s příběhy pacientů.
-          Kompletní produkce a postprodukce"
-          reverse
         />
         <Video
           nadpis="Lucie Bílá - Mám ráda život"
           src="images/lucie.png"
           videoSrc="https://www.youtube.com/embed/wR3v1ZfcWzM"
           text="Obrazová postprodukce"
-        />
-        <Video
-          nadpis="Volvo Trucks 20 let"
-          src="images/volvo_thumbnail.png"
-          videoSrc="https://www.youtube.com/embed/zFX3F2FrIOg"
           reverse
-          text="Kompletní produkce a postprodukce"
         />
         <Video
-          nadpis="ABB - EGO-N"
-          src="https://i.vimeocdn.com/video/429633564-ad351e8154183294f8e09f1ff5acad35fc8fa9c0938023354f5f3569d8cbee2d-d?mw=1500"
-          videoSrc="https://player.vimeo.com/video/61793279"
-          text="Reklamní spot pro společnost ABB ve spolupráci s reklamní agenturou Studio Rema 93"
+          nadpis="Kampaň Tloustneme"
+          src="https://i.vimeocdn.com/video/1331570366-14143053c416bbac5d8f3e68b6ea1d530baa0c2cfcfaa9dcf4c8b3c60fd1ef3c-d?mw=1500"
+          videoSrc="https://www.youtube.com/embed/FZ4_ydyv-WA"
+          text="Série spotů s Martinem Zounarem a videomedailonky s příběhy pacientů
+          Kompletní produkce a postprodukce"
         />
         <Video
           nadpis="D.Y.K. - You Don't Know Who I Am"
@@ -150,11 +138,19 @@ export default function Home() {
           text="Color correction, Color grading"
           reverse
         />
+
+        <Video
+          nadpis="Volvo Trucks 20 let"
+          src="images/volvo_thumbnail.png"
+          videoSrc="https://www.youtube.com/embed/zFX3F2FrIOg"
+          text="Kompletní produkce a postprodukce"
+        />
         <Video
           nadpis="Two Lions to Venice"
           src="https://image.pmgstatic.com/cache/resized/w1989/files/images/film/photos/165/816/165816139_c9bf71.jpg"
           videoSrc="https://video.pmgstatic.com/files/videos/157/776/157776122/165071176_9b316a.mp4"
           text="Střih a kompletní postprodukce"
+          reverse
         />
         <Video
           nadpis="A MARRIAGE"
@@ -162,9 +158,27 @@ export default function Home() {
           videoSrc="https://player.vimeo.com/video/233473364"
           ntk={false}
           text="Kamera a postprodukce"
+        />
+        <Video
+          nadpis="Inseminátor"
+          src="images/inseminator.png"
+          videoSrc="https://player.vimeo.com/video/53498086"
+          text="Obrazová postprodukce"
           reverse
         />
-
+        <Video
+          nadpis="Exclusive Tours"
+          src="images/more.png"
+          text="Střih a postprodukce"
+          videoSrc="https://www.youtube.com/embed/cWZfMEXvVPA"
+        />
+        <Video
+          nadpis="Girl Therapy - New End"
+          text="Kompletní produkce a postprodukce"
+          src="images/girl.png"
+          videoSrc="https://player.vimeo.com/video/163822866"
+          reverse
+        />
         <Video
           nadpis="The Last Lesson"
           src="images/lastlesson.png"
@@ -172,25 +186,17 @@ export default function Home() {
           text="Kompletní produkce a postprodukce"
         />
         <Video
-          nadpis="Exclusive Tours"
-          src="images/more.png"
-          text="Střih a postprodukce"
-          videoSrc="https://www.youtube.com/embed/cWZfMEXvVPA"
-          reverse
-        />
-        <Video
-          nadpis="Girl Therapy - New End"
-          text="Kompletní produkce a postprodukce"
-          src="images/girl.png"
-          videoSrc="https://player.vimeo.com/video/163822866"
-        />
-
-        <Video
           nadpis="Wavin Ecoplastik"
           src="https://i.vimeocdn.com/video/567624511-f4b2485ef97ff9e3afb67e94039152b21fc59c676e9d60b201d956af9a7e474e-d?mw=1500"
           videoSrc="https://player.vimeo.com/video/110729762"
           text="Kompletní produkce a postprodukce"
           reverse
+        />
+        <Video
+          nadpis="ABB - EGO-N"
+          src="https://i.vimeocdn.com/video/429633564-ad351e8154183294f8e09f1ff5acad35fc8fa9c0938023354f5f3569d8cbee2d-d?mw=1500"
+          videoSrc="https://player.vimeo.com/video/61793279"
+          text="Reklamní spot pro společnost ABB ve spolupráci s reklamní agenturou Studio Rema 93"
         />
 
         <Flex minH="850px" w="100%" flexDir="column" align="center">

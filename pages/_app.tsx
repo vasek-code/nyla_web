@@ -34,7 +34,6 @@ function MyApp({ Component, pageProps }) {
         {/* <Wrapper> */}
         <Component {...pageProps} />
         {/* </Wrapper> */}
-        <ScrollToTopButton />
       </ChakraProvider>
     </>
   );
