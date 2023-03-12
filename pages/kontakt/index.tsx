@@ -59,6 +59,7 @@ export default function Kontakt2Page() {
         flexDir="column"
         pb="20px"
         px="10px"
+        align="center"
       >
         <Heading
           color="white"
@@ -101,19 +102,35 @@ export default function Kontakt2Page() {
               src="/images/lukas.png"
               heading="Lukáš Mráček"
               text="Executive producer"
+              phone="775 322 101"
+              email="lukas.mracek@nyla.cz"
             />
             <ContactGridItem
               src="/images/marek.jpg"
               heading="Marek Procházka"
               text="Creative director"
+              phone="721 363 195"
+              email="marek.prochazka@nyla.cz"
             />
             <ContactGridItem
               src="/images/ondrej.png"
               heading="Ondřej Belica"
               text="Director of photography"
+              phone="777 119 845"
+              email="ondrej.belica@nyla.cz"
               last
             />
           </Grid>
+        </Flex>
+        <Flex minW="308px" w="50%" justify="space-around" pt="40px">
+          <Flex align="center" flexDir="column" gap="5px">
+            <AiFillMail size="60px" />
+            <Text fontSize="20px">info@nyla.cz</Text>
+          </Flex>
+          <Flex align="center" flexDir="column" gap="5px">
+            <AiFillPhone size="60px" />
+            <Text fontSize="20px">+420 775 322 101</Text>
+          </Flex>
         </Flex>
       </Flex>
     </>

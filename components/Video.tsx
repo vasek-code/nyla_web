@@ -50,7 +50,7 @@ export default function Video({
                 w="50%"
               >
                 <Heading
-                  color="white"
+                  color="rgb(224, 224, 224)"
                   fontWeight="800"
                   fontSize={headingFontSize}
                   letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
@@ -133,7 +133,7 @@ export default function Video({
                   <Text
                     data-aos="fade-up"
                     data-aos-duration="700"
-                    color="white"
+                    color="rgb(224, 224, 224)"
                     textAlign="center"
                     fontWeight="semibold"
                     fontSize="2xl"
@@ -155,7 +155,7 @@ export default function Video({
             <VStack w="100%" h="100%" pb="40px" gap="30px">
               <VStack justify="center" align="center" px="20px">
                 <Heading
-                  color="white"
+                  color="rgb(224, 224, 224)"
                   fontWeight="800"
                   fontSize={headingFontSize}
                   letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
@@ -181,6 +181,7 @@ export default function Video({
                     <Text
                       fontSize={["20px", "20px", "20px", "25px"]}
                       paddingBottom="8px"
+                      color="rgb(224, 224, 224)"
                     >
                       {text}
                     </Text>
@@ -241,7 +242,7 @@ export default function Video({
 
                 {text && !ntk && (
                   <Flex
-                    color="white"
+                    color="rgb(224, 224, 224)"
                     data-aos="fade-up"
                     data-aos-duration="700"
                     textAlign="center"
@@ -254,6 +255,7 @@ export default function Video({
                     <Text
                       fontSize={["20px", "20px", "20px", "25px"]}
                       paddingBottom="8px"
+                      color="rgb(224, 224, 224)"
                     >
                       {text}
                     </Text>
@@ -287,7 +289,7 @@ export default function Video({
                 w="50%"
               >
                 <Heading
-                  color="white"
+                  color="rgb(224, 224, 224)"
                   fontWeight="800"
                   fontSize={headingFontSize}
                   letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
@@ -301,7 +303,7 @@ export default function Video({
                 <Text
                   data-aos="fade-up"
                   data-aos-duration="700"
-                  color="white"
+                  color="rgb(224, 224, 224)"
                   textAlign="center"
                   fontWeight="semibold"
                   fontSize="2xl"
@@ -316,7 +318,7 @@ export default function Video({
             <VStack w="100%" h="100%" pb="40px" gap="30px">
               <VStack justify="center" align="center" px="20px">
                 <Heading
-                  color="white"
+                  color="rgb(224, 224, 224)"
                   fontWeight="800"
                   fontSize={headingFontSize}
                   letterSpacing={["-1px", "-2px", "-2px", "-2px"]}
@@ -329,7 +331,7 @@ export default function Video({
 
                 {text && !ntk && (
                   <Flex
-                    color="white"
+                    color="rgb(224, 224, 224)"
                     data-aos="fade-up"
                     data-aos-duration="700"
                     textAlign="center"
@@ -342,6 +344,7 @@ export default function Video({
                     <Text
                       fontSize={["20px", "20px", "20px", "25px"]}
                       paddingBottom="8px"
+                      color="rgb(224, 224, 224)"
                     >
                       {text}
                     </Text>

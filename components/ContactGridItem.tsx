@@ -7,10 +7,12 @@ export const ContactGridItem: React.FC<{
   heading: string;
   text: string;
   last?: boolean;
-}> = ({ src, heading, text, last }) => {
+  phone: string;
+  email: string;
+}> = ({ src, heading, text, last, email, phone }) => {
   return (
     <>
-      <Flex flexDir="column">
+      <Flex flexDir="column" className={last && "last-one"}>
         <GridItem
           background="rgba(255, 255, 255, 0.11)"
           borderRadius="8px"
@@ -20,26 +22,25 @@ export const ContactGridItem: React.FC<{
           }}
           transitionProperty="all"
           transitionDuration="200ms"
-          className={last && "last-one"}
         >
-          <Flex w="100%" justify="space-between" pb="10px">
+          <Flex w="100%" align="center" pb="10px" flexDir="column">
             <a
               style={{
                 fontSize: "19px",
                 fontWeight: "600",
               }}
-              href="mailto:info@nyla.com"
+              href={`mailto:${email}`}
             >
-              info@nyla.cz
+              {email}
             </a>
             <a
               style={{
                 fontSize: "19px",
                 fontWeight: "600",
               }}
-              href="tel:123-123-123"
+              href={`tel:${phone}`}
             >
-              123 123 123
+              {phone}
             </a>
           </Flex>
           <Flex flexDir="column" w="100%" h="100%">

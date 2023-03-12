@@ -77,12 +77,13 @@ export default function Home() {
                 fontSize={["1.5rem", "1.5rem", "2rem", "2rem"]}
                 mb="10px"
                 textAlign="center"
+                color="rgb(224, 224, 224)"
               >
                 KREATIVNÍ AGENTURA,
                 <br /> KTERÁ VÁS VTÁHNE DO DĚJE!
               </Text>
               <Text
-                color="white"
+                color="rgb(224, 224, 224)"
                 textAlign="center"
                 maxW="500px"
                 fontSize={["1rem", "1rem", "1.3rem", "1.3rem"]}
