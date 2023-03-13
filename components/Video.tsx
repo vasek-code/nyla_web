@@ -22,6 +22,7 @@ export default function Video({
   const [opened, setOpened] = useState(false);
   const [openedLink, setOpenedLink] = useState(false);
   const [link, setLink] = useState("");
+  const [videoHovered, setVideoHovered] = useState(false);
 
   const headingFontSize = ["2.2rem", "2.3rem", "2.3rem", "2.5rem", "3rem"];
 
@@ -143,9 +144,27 @@ export default function Video({
                   </Text>
                 )}
               </VStack>
-              <Flex justify="center" align="center" w="50%">
+              <Flex
+                justify="center"
+                align="center"
+                w="50%"
+                onMouseEnter={() => {
+                  setVideoHovered(true);
+                }}
+                onMouseLeave={() => {
+                  setVideoHovered(false);
+                }}
+              >
                 <Flex position="absolute" justify="center" cursor="pointer">
-                  <BiPlay color="white" size="100px" onClick={handleClick} />
+                  <BiPlay
+                    color={videoHovered && "#fff"}
+                    size={videoHovered ? "150px" : "100px"}
+                    style={{
+                      transitionProperty: "all",
+                      transitionDuration: "200ms",
+                    }}
+                    onClick={handleClick}
+                  />
                 </Flex>
                 <Image src={src} w="100%" />
               </Flex>
@@ -262,9 +281,26 @@ export default function Video({
                   </Flex>
                 )}
               </VStack>
-              <Flex justify="center" align="center">
+              <Flex
+                justify="center"
+                align="center"
+                onMouseEnter={() => {
+                  setVideoHovered(true);
+                }}
+                onMouseLeave={() => {
+                  setVideoHovered(false);
+                }}
+              >
                 <Flex position="absolute" justify="center" cursor="pointer">
-                  <BiPlay color="white" size="100px" onClick={handleClick} />
+                  <BiPlay
+                    color={videoHovered && "#fff"}
+                    size={videoHovered ? "150px" : "100px"}
+                    style={{
+                      transitionProperty: "all",
+                      transitionDuration: "200ms",
+                    }}
+                    onClick={handleClick}
+                  />
                 </Flex>
                 <Image w="1000px" src={src} />
               </Flex>
@@ -275,9 +311,27 @@ export default function Video({
         <>
           <Flex display={["none", "none", "none", "flex"]}>
             <Flex w="100%" h="100%">
-              <Flex justify="center" align="center" w="50%">
+              <Flex
+                justify="center"
+                align="center"
+                w="50%"
+                onMouseEnter={() => {
+                  setVideoHovered(true);
+                }}
+                onMouseLeave={() => {
+                  setVideoHovered(false);
+                }}
+              >
                 <Flex position="absolute" justify="center" cursor="pointer">
-                  <BiPlay color="white" size="100px" onClick={handleClick} />
+                  <BiPlay
+                    color={videoHovered && "#fff"}
+                    size={videoHovered ? "150px" : "100px"}
+                    style={{
+                      transitionProperty: "all",
+                      transitionDuration: "200ms",
+                    }}
+                    onClick={handleClick}
+                  />
                 </Flex>
                 <Image src={src} />
               </Flex>
@@ -351,9 +405,26 @@ export default function Video({
                   </Flex>
                 )}
               </VStack>
-              <Flex justify="center" align="center">
+              <Flex
+                justify="center"
+                align="center"
+                onMouseEnter={() => {
+                  setVideoHovered(true);
+                }}
+                onMouseLeave={() => {
+                  setVideoHovered(false);
+                }}
+              >
                 <Flex position="absolute" justify="center" cursor="pointer">
-                  <BiPlay color="white" size="100px" onClick={handleClick} />
+                  <BiPlay
+                    color={videoHovered && "#fff"}
+                    size={videoHovered ? "150px" : "100px"}
+                    style={{
+                      transitionProperty: "all",
+                      transitionDuration: "200ms",
+                    }}
+                    onClick={handleClick}
+                  />
                 </Flex>
                 <Image w="100%" src={src} />
               </Flex>

@@ -19,6 +19,7 @@ import { VideoFrame } from "../../components/VideoFrame";
 
 export default function Postprodukce() {
   const [opened, setOpened] = useState(false);
+  const [videoHovered, setVideoHovered] = useState(false);
 
   function handleClick() {
     setOpened(!opened);
@@ -111,7 +112,16 @@ export default function Postprodukce() {
                 Showreel
               </Text>
 
-              <Flex justify="center" align="center">
+              <Flex
+                justify="center"
+                align="center"
+                onMouseEnter={() => {
+                  setVideoHovered(true);
+                }}
+                onMouseLeave={() => {
+                  setVideoHovered(false);
+                }}
+              >
                 <Flex
                   position="absolute"
                   justify="center"
@@ -120,7 +130,14 @@ export default function Postprodukce() {
                     handleClick();
                   }}
                 >
-                  <BiPlay color="white" size="100px" />
+                  <BiPlay
+                    color="white"
+                    size={videoHovered ? "150px" : "100px"}
+                    style={{
+                      transitionProperty: "all",
+                      transitionDuration: "200ms",
+                    }}
+                  />
                 </Flex>
                 <Image w="100%" src="images/ntkthumbnail2.jpg" />
               </Flex>
