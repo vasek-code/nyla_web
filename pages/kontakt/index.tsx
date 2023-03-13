@@ -7,6 +7,7 @@ import {
   Text,
   HStack,
   Grid,
+  Link,
 } from "@chakra-ui/react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { AiFillPhone, AiFillMail } from "react-icons/ai";
@@ -125,11 +126,15 @@ export default function Kontakt2Page() {
         <Flex minW="308px" w="50%" justify="space-around" pt="40px">
           <Flex align="center" flexDir="column" gap="5px">
             <AiFillMail size="60px" />
-            <Text fontSize="20px">info@nyla.cz</Text>
+            <a style={{ fontSize: "20px" }} href="mailto:info@nyla.cz">
+              info@nyla.cz
+            </a>
           </Flex>
           <Flex align="center" flexDir="column" gap="5px">
             <AiFillPhone size="60px" />
-            <Text fontSize="20px">+420 775 322 101</Text>
+            <a style={{ fontSize: "20px" }} href="tel:+420-775-322-101">
+              +420 775 322 101
+            </a>
           </Flex>
         </Flex>
       </Flex>

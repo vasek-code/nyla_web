@@ -38,7 +38,7 @@ export const ContactGridItem: React.FC<{
                 fontSize: "19px",
                 fontWeight: "600",
               }}
-              href={`tel:${phone}`}
+              href={`tel:+420-${phone.replace(/\s/g, "-")}`}
             >
               {phone}
             </a>

@@ -41,52 +41,48 @@ export default function Sluzby() {
           <Service
             heading="Offline střih"
             text="Avid Media Composer, Adobe Premiere Pro, Final Cut Pro"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/video-editing_bfiutj.jpg"
+            src="images/video-editing.jpg"
           />
 
           <Service
             heading="Barevné korekce"
             text="DaVinci Resolve Studio"
-            src="images/new/color-min.jpg"
+            src="images/color.jpg"
             reverse
           />
 
           <Service
             heading="VFX and Motion Graphic"
             text="Adobe After Effects, Nuke"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/vfx_qle3ru.jpg"
+            src="images/vfx.jpg"
           />
 
           <Service
             heading="Grafické práce"
             text="Adobe Illustrator, Adobe Photoshop"
-            src="images/new/grafic-min.jpg"
+            src="images/grafic.jpg"
             reverse
           />
 
-          <Service
-            heading="Animace"
-            text="3D Max"
-            src="images/new/animation-min.jpg"
-          />
+          <Service heading="Animace" text="3D Max" src="images/animation.jpg" />
 
           <Service
             heading="Zvuková postprodukce"
             text="Avid Pro Tools"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/sound_jymab1.jpg"
+            src="images/sound.jpg"
             reverse
           />
 
           <Service
             heading="Dramaturgie"
             text="Střihová dramaturgie"
-            src="images/new/dramaturgy-min.jpg"
+            src="images/dramaturgy.jpg"
           />
 
           <Service
             heading="Workshopy"
             text="Offline střih, Barevné korekce"
-            src="https://res.cloudinary.com/dvez2ui2g/image/upload/c_scale,h_1064,q_70/v1657702201/nyla/workshop_xfstc3.jpg"
+            src="images/workshop.jpg"
             reverse
           />
           <ScrollToTopButton />

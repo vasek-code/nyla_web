@@ -166,14 +166,10 @@ export default function Navbar() {
           >
             <HiOutlineMenuAlt3 color="white" size="40px" />
           </Flex>
-          <HStack
-            align="center"
-            gap="10px"
-            display={["none", "none", "flex", "flex"]}
-          >
+          <HStack align="center" display={["none", "none", "flex", "flex"]}>
             <Button
               color={router.route === "/" ? "#2792c2" : "white"}
-              variant="link"
+              variant="ghost"
               fontSize="17px"
               onClick={() => {
                 Router.push("/");
@@ -183,7 +179,7 @@ export default function Navbar() {
             </Button>
             <Button
               color={router.route === "/sluzby" ? "#2792c2" : "white"}
-              variant="link"
+              variant="ghost"
               fontSize="17px"
               onClick={() => {
                 Router.push("/sluzby");
@@ -193,7 +189,7 @@ export default function Navbar() {
             </Button>
             <Button
               color={router.route === "/postprodukce" ? "#2792c2" : "white"}
-              variant="link"
+              variant="ghost"
               fontSize="17px"
               onClick={() => {
                 Router.push("/postprodukce");
@@ -203,7 +199,7 @@ export default function Navbar() {
             </Button>
             <Button
               color={router.route === "/kontakt" ? "#2792c2" : "white"}
-              variant="link"
+              variant="ghost"
               fontSize="17px"
               onClick={() => {
                 Router.push("/kontakt");

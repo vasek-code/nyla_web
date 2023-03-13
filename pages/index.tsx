@@ -115,12 +115,12 @@ export default function Home() {
           nadpis="CzechELib"
           text="Série videí o činnosti Národního centra pro elektronické informační zdroje
           Kompletní vývoj, produkce a postprodukce"
-          src="images/ntkthumbnail.png"
+          src="images/ntkthumbnail.jpg"
           videoSrc="https://www.youtube.com/embed/ByA9Y7Bv9Ss"
         />
         <Video
           nadpis="Lucie Bílá - Mám ráda život"
-          src="images/lucie.png"
+          src="images/lucie.jpg"
           videoSrc="https://www.youtube.com/embed/wR3v1ZfcWzM"
           text="Obrazová postprodukce"
           reverse
@@ -134,7 +134,7 @@ export default function Home() {
         />
         <Video
           nadpis="D.Y.K. - You Don't Know Who I Am"
-          src="images/dyk.png"
+          src="images/dyk.jpg"
           videoSrc="https://www.youtube.com/embed/G-ykGG6ZJ_0"
           text="Color correction, Color grading"
           reverse
@@ -142,8 +142,8 @@ export default function Home() {
 
         <Video
           nadpis="Volvo Trucks 20 let"
-          src="images/volvo_thumbnail.png"
-          videoSrc="https://www.youtube.com/embed/zFX3F2FrIOg"
+          src="images/volvo_thumbnail.jpg"
+          videoSrc="https://player.vimeo.com/video/235535506"
           text="Kompletní produkce a postprodukce"
         />
         <Video
@@ -162,14 +162,14 @@ export default function Home() {
         />
         <Video
           nadpis="Inseminátor"
-          src="images/inseminator.png"
+          src="images/inseminator.jpg"
           videoSrc="https://player.vimeo.com/video/53498086"
           text="Obrazová postprodukce"
           reverse
         />
         <Video
           nadpis="Exclusive Tours"
-          src="images/more.png"
+          src="images/more.jpg"
           text="Střih a postprodukce"
           videoSrc="https://www.youtube.com/embed/cWZfMEXvVPA"
         />
@@ -182,7 +182,7 @@ export default function Home() {
         />
         <Video
           nadpis="The Last Lesson"
-          src="images/lastlesson.png"
+          src="images/lastlesson.jpg"
           videoSrc="https://player.vimeo.com/video/320433440"
           text="Kompletní produkce a postprodukce"
         />

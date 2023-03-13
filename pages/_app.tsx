@@ -14,6 +14,7 @@ import "@fontsource/inter";
 import { Footer } from "../components/Footer";
 import { Wrapper } from "../components/Wrapper";
 import ScrollToTopButton from "../components/ScrollToTop";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const [start, setStart] = useState(true);
@@ -27,6 +28,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>NYLA - KREATIVNÍ AGENTURA</title>
+      </Head>
       <ChakraProvider theme={theme}>
         {/* {start && <Intro />} */}
         <Background />

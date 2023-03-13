@@ -122,7 +122,7 @@ export default function Postprodukce() {
                 >
                   <BiPlay color="white" size="100px" />
                 </Flex>
-                <Image w="100%" src="images/ntkthumbnail2.png" />
+                <Image w="100%" src="images/ntkthumbnail2.jpg" />
               </Flex>
             </Flex>
           </Flex>

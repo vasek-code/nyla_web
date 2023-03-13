@@ -10,7 +10,7 @@ export const ServicesGridItem: React.FC<{
   return (
     <GridItem
       w="270px"
-      h="360px"
+      h="320px"
       background="rgba(255, 255, 255, 0.11)"
       borderRadius="8px"
       p="20px"
@@ -20,27 +20,32 @@ export const ServicesGridItem: React.FC<{
       transitionProperty="all"
       transitionDuration="200ms"
     >
-      <Flex w="100%" h="100%" flexDir="column" align="center" justify="center">
-        <Text
-          fontWeight="700"
-          fontSize={["1.3rem", "1.3rem", "1.3rem", "1.3rem"]}
-          textAlign="center"
-          w="100%"
-        >
-          {heading}
-        </Text>
-        <Flex h="200px" w="100%" justify="center" align="center">
-          <Image
-            src={src}
-            alt={heading}
-            width="100%"
-            maxWidth="100px"
-            height="auto"
-          />
+      <Flex
+        w="100%"
+        h="100%"
+        flexDir="column"
+        align="center"
+        justify="center"
+        gap="20px"
+      >
+        <Flex h="60px" align="center">
+          <Text
+            fontWeight="700"
+            fontSize={["1.3rem", "1.3rem", "1.3rem", "1.3rem"]}
+            textAlign="center"
+            w="100%"
+          >
+            {heading}
+          </Text>
         </Flex>
-        <Text textAlign="center" w="100%" fontSize="1.2rem" fontWeight="600">
-          {text}
-        </Text>
+        <Flex w="100%" justify="center" align="center" height="120px">
+          <Image src={src} alt={heading} maxHeight="100px" height="100%" />
+        </Flex>
+        <Flex h="60px" align="center">
+          <Text textAlign="center" w="100%" fontSize="1.2rem" fontWeight="600">
+            {text}
+          </Text>
+        </Flex>
       </Flex>
     </GridItem>
   );
