@@ -19,6 +19,7 @@ export default function Video({
   reverse?: boolean;
   ntk?: boolean;
 }) {
+  console.log(text);
   const [opened, setOpened] = useState(false);
   const [openedLink, setOpenedLink] = useState(false);
   const [link, setLink] = useState("");
@@ -73,8 +74,13 @@ export default function Video({
                     letterSpacing="0px"
                     flexDir="column"
                     gap="10px"
+                    w="100%"
                   >
-                    <Text fontSize="23px">{text}</Text>
+                    <Flex w="100%" justify="center" align="center">
+                      <Text fontSize="23px" w="80%" whiteSpace="pre-line">
+                        {text}
+                      </Text>
+                    </Flex>
                     <Text
                       _hover={{
                         background: "whiteAlpha.400",
@@ -131,17 +137,21 @@ export default function Video({
                 )}
 
                 {!ntk && (
-                  <Text
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                    color="rgb(224, 224, 224)"
-                    textAlign="center"
-                    fontWeight="semibold"
-                    fontSize="2xl"
-                    letterSpacing="0px"
-                  >
-                    {text}
-                  </Text>
+                  <Flex w="100%" justify="center" align="center">
+                    <Text
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                      color="rgb(224, 224, 224)"
+                      textAlign="center"
+                      fontWeight="semibold"
+                      fontSize="2xl"
+                      letterSpacing="0px"
+                      w="80%"
+                      whiteSpace="pre-line"
+                    >
+                      {text}
+                    </Text>
+                  </Flex>
                 )}
               </VStack>
               <Flex
@@ -197,13 +207,17 @@ export default function Video({
                     flexDir="column"
                     gap="5px"
                   >
-                    <Text
-                      fontSize={["20px", "20px", "20px", "25px"]}
-                      paddingBottom="8px"
-                      color="rgb(224, 224, 224)"
-                    >
-                      {text}
-                    </Text>
+                    <Flex w="100%" justify="center" align="center">
+                      <Text
+                        fontSize={["20px", "20px", "20px", "25px"]}
+                        paddingBottom="8px"
+                        color="rgb(224, 224, 224)"
+                        w="80%"
+                        whiteSpace="pre-line"
+                      >
+                        {text}
+                      </Text>
+                    </Flex>
                     <Text
                       _hover={{
                         background: "whiteAlpha.400",
@@ -270,11 +284,16 @@ export default function Video({
                     letterSpacing="0px"
                     flexDir="column"
                     gap="5px"
+                    w="100%"
+                    justify="center"
+                    align="center"
                   >
                     <Text
                       fontSize={["20px", "20px", "20px", "25px"]}
                       paddingBottom="8px"
                       color="rgb(224, 224, 224)"
+                      w="80%"
+                      whiteSpace="pre-line"
                     >
                       {text}
                     </Text>
@@ -354,17 +373,21 @@ export default function Video({
                   {nadpis}
                 </Heading>
 
-                <Text
-                  data-aos="fade-up"
-                  data-aos-duration="700"
-                  color="rgb(224, 224, 224)"
-                  textAlign="center"
-                  fontWeight="semibold"
-                  fontSize="2xl"
-                  letterSpacing="0px"
-                >
-                  {text}
-                </Text>
+                <Flex w="100%" justify="center" align="center">
+                  <Text
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    color="rgb(224, 224, 224)"
+                    textAlign="center"
+                    fontWeight="semibold"
+                    fontSize="2xl"
+                    letterSpacing="0px"
+                    w="80%"
+                    whiteSpace="pre-line"
+                  >
+                    {text}
+                  </Text>
+                </Flex>
               </VStack>
             </Flex>
           </Flex>
@@ -394,11 +417,16 @@ export default function Video({
                     letterSpacing="0px"
                     flexDir="column"
                     gap="5px"
+                    w="100%"
+                    justify="center"
+                    align="center"
                   >
                     <Text
                       fontSize={["20px", "20px", "20px", "25px"]}
                       paddingBottom="8px"
                       color="rgb(224, 224, 224)"
+                      w="80%"
+                      whiteSpace="pre-line"
                     >
                       {text}
                     </Text>

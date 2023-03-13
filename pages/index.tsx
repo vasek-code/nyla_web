@@ -113,8 +113,8 @@ export default function Home() {
 
         <Video
           nadpis="CzechELib"
-          text="Série videí o činnosti Národního centra pro elektronické informační zdroje
-          Kompletní vývoj, produkce a postprodukce"
+          text={`Série videí o činnosti Národního centra pro elektronické informační zdroje 
+          Kompletní vývoj, produkce a postprodukce`}
           src="images/ntkthumbnail.jpg"
           videoSrc="https://www.youtube.com/embed/ByA9Y7Bv9Ss"
         />
@@ -129,8 +129,8 @@ export default function Home() {
           nadpis="Kampaň Tloustneme"
           src="images/zounar2.jpg"
           videoSrc="https://www.youtube.com/embed/FZ4_ydyv-WA"
-          text="Série spotů s Martinem Zounarem a videomedailonky s příběhy pacientů
-          Kompletní produkce a postprodukce"
+          text={`Série spotů s Martinem Zounarem a videomedailonky s příběhy pacientů 
+          Kompletní produkce a postprodukce`}
         />
         <Video
           nadpis="D.Y.K. - You Don't Know Who I Am"
