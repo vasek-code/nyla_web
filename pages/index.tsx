@@ -127,7 +127,7 @@ export default function Home() {
         />
         <Video
           nadpis="Kampaň Tloustneme"
-          src="https://i.vimeocdn.com/video/1331570366-14143053c416bbac5d8f3e68b6ea1d530baa0c2cfcfaa9dcf4c8b3c60fd1ef3c-d?mw=1500"
+          src="images/zounar2.jpg"
           videoSrc="https://www.youtube.com/embed/FZ4_ydyv-WA"
           text="Série spotů s Martinem Zounarem a videomedailonky s příběhy pacientů
           Kompletní produkce a postprodukce"
