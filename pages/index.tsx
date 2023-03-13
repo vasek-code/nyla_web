@@ -91,8 +91,8 @@ export default function Home() {
               >
                 Jsme tu pro vás už od roku 2011. <br />
                 Zajišťujeme vývoj a výrobu audiovizuálních děl
-                <br /> pro komunikační, digitální a eventové agentury, ale i
-                přímo pro klienty.
+                <br /> pro komunikační, digitální a eventové agentury, <br />
+                ale i přímo pro klienty.
               </Text>
             </Flex>
             <Flex pt="20px">

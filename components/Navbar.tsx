@@ -170,6 +170,9 @@ export default function Navbar() {
             <Button
               color={router.route === "/" ? "#2792c2" : "white"}
               variant="ghost"
+              _focus={{
+                boxShadow: "none",
+              }}
               fontSize="17px"
               onClick={() => {
                 Router.push("/");
@@ -180,6 +183,9 @@ export default function Navbar() {
             <Button
               color={router.route === "/sluzby" ? "#2792c2" : "white"}
               variant="ghost"
+              _focus={{
+                boxShadow: "none",
+              }}
               fontSize="17px"
               onClick={() => {
                 Router.push("/sluzby");
@@ -190,6 +196,9 @@ export default function Navbar() {
             <Button
               color={router.route === "/postprodukce" ? "#2792c2" : "white"}
               variant="ghost"
+              _focus={{
+                boxShadow: "none",
+              }}
               fontSize="17px"
               onClick={() => {
                 Router.push("/postprodukce");
@@ -200,6 +209,9 @@ export default function Navbar() {
             <Button
               color={router.route === "/kontakt" ? "#2792c2" : "white"}
               variant="ghost"
+              _focus={{
+                boxShadow: "none",
+              }}
               fontSize="17px"
               onClick={() => {
                 Router.push("/kontakt");
