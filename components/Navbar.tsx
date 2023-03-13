@@ -170,8 +170,14 @@ export default function Navbar() {
             <Button
               color={router.route === "/" ? "#2792c2" : "white"}
               variant="ghost"
+              _hover={{
+                color: "#28a8e1",
+              }}
               _focus={{
                 boxShadow: "none",
+              }}
+              _active={{
+                background: "transparent",
               }}
               fontSize="17px"
               onClick={() => {
@@ -183,8 +189,14 @@ export default function Navbar() {
             <Button
               color={router.route === "/sluzby" ? "#2792c2" : "white"}
               variant="ghost"
+              _hover={{
+                color: "#28a8e1",
+              }}
               _focus={{
                 boxShadow: "none",
+              }}
+              _active={{
+                background: "transparent",
               }}
               fontSize="17px"
               onClick={() => {
@@ -196,8 +208,14 @@ export default function Navbar() {
             <Button
               color={router.route === "/postprodukce" ? "#2792c2" : "white"}
               variant="ghost"
+              _hover={{
+                color: "#28a8e1",
+              }}
               _focus={{
                 boxShadow: "none",
+              }}
+              _active={{
+                background: "transparent",
               }}
               fontSize="17px"
               onClick={() => {
@@ -209,6 +227,12 @@ export default function Navbar() {
             <Button
               color={router.route === "/kontakt" ? "#2792c2" : "white"}
               variant="ghost"
+              _hover={{
+                color: "#28a8e1",
+              }}
+              _active={{
+                background: "transparent",
+              }}
               _focus={{
                 boxShadow: "none",
               }}

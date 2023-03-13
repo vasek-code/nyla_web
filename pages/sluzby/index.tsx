@@ -98,7 +98,7 @@ export default function Postprodukce() {
               />
               <ServicesGridItem
                 heading="POSTPRODUCTION"
-                text="Graphics, Offline, Color Correction, Sound, VFX"
+                text="Graphics, Offline, Sound, Color Correction, VFX"
                 src="/images/postproduction.png"
               />
             </Grid>
