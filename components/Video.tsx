@@ -19,7 +19,6 @@ export default function Video({
   reverse?: boolean;
   ntk?: boolean;
 }) {
-  console.log(text);
   const [opened, setOpened] = useState(false);
   const [openedLink, setOpenedLink] = useState(false);
   const [link, setLink] = useState("");

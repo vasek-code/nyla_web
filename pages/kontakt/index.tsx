@@ -87,7 +87,7 @@ export default function Kontakt2Page() {
             fontSize={["1rem", "1.1rem", "1.2rem", "1.2rem"]}
             fontWeight="600"
           >
-            Jste připraveni dělat další projekt s námi? <br /> Zavolejte anebo
+            Jste připraveni dělat další projekt s námi? <br /> Zavolejte nebo
             nám napište a my se vám co nejdříve ozveme!
           </Text>
           {/* </Flex> */}
@@ -103,21 +103,21 @@ export default function Kontakt2Page() {
               src="/images/lukas.png"
               heading="Lukáš Mráček"
               text="Executive producer"
-              phone="775 322 101"
+              phone="+420 775 322 101"
               email="lukas.mracek@nyla.cz"
             />
             <ContactGridItem
               src="/images/marek.jpg"
               heading="Marek Procházka"
               text="Creative director"
-              phone="721 363 195"
+              phone="+420 721 363 195"
               email="marek.prochazka@nyla.cz"
             />
             <ContactGridItem
               src="/images/ondrej.png"
               heading="Ondřej Belica"
               text="Director of photography"
-              phone="777 119 845"
+              phone="+420 777 119 845"
               email="ondrej.belica@nyla.cz"
               last
             />

@@ -112,6 +112,13 @@ export default function Home() {
         </Flex>
 
         <Video
+          nadpis="Ecover"
+          text="Kompletní produkce a postprodukce"
+          src="images/ecover-thumbnail.jpg"
+          videoSrc="https://player.vimeo.com/video/809504567"
+          reverse
+        />
+        <Video
           nadpis="CzechELib"
           text={`Série videí o činnosti Národního centra pro elektronické informační zdroje 
           Kompletní vývoj, produkce a postprodukce`}
@@ -219,6 +226,31 @@ export default function Home() {
             className="customers-grid"
           >
             <CompanyCard
+              src="/images/elib.png"
+              text="CZECH ELIB"
+              webSrc="https://www.czechelib.cz/cs/"
+            />
+            <CompanyCard
+              src="/images/fleishman.webp"
+              text="FLEISHMAN"
+              webSrc="https://fleishmanhillard.cz/"
+            />
+            <CompanyCard
+              src="/images/volvo.svg"
+              text="VOLVO"
+              webSrc="https://www.volvotrucks.cz/cs-cz/"
+            />
+            <CompanyCard
+              src="/images/MDP.png"
+              text="MDP"
+              webSrc="https://www.mestskadivadlaprazska.cz/"
+            />
+            <CompanyCard
+              src="/images/newwave.png"
+              text="NEW WAVE"
+              webSrc="https://www.new-wave.cz/"
+            />
+            <CompanyCard
               src="/images/abb.png"
               text="ABB"
               webSrc="https://new.abb.com/cz"
@@ -267,31 +299,6 @@ export default function Home() {
               src="/images/wavin.png"
               text="WAVIN"
               webSrc="https://www.wavinekoplastik.com/"
-            />
-            <CompanyCard
-              src="/images/elib.png"
-              text="CZECH ELIB"
-              webSrc="https://www.czechelib.cz/cs/"
-            />
-            <CompanyCard
-              src="/images/fleishman.webp"
-              text="FLEISHMAN"
-              webSrc="https://fleishmanhillard.cz/"
-            />
-            <CompanyCard
-              src="/images/volvo.svg"
-              text="VOLVO"
-              webSrc="https://www.volvotrucks.cz/cs-cz/"
-            />
-            <CompanyCard
-              src="/images/MDP.png"
-              text="MDP"
-              webSrc="https://www.mestskadivadlaprazska.cz/"
-            />
-            <CompanyCard
-              src="/images/newwave.png"
-              text="NEW WAVE"
-              webSrc="https://www.new-wave.cz/"
             />
           </Grid>
           <ScrollToTopButton />

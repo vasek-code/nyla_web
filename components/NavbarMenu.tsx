@@ -7,7 +7,8 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 export const NavbarMenu: React.FC<{
   opened: boolean;
-}> = ({ opened }) => {
+  setOpened: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ opened, setOpened }) => {
   const router = useRouter();
 
   return (
@@ -38,6 +39,9 @@ export const NavbarMenu: React.FC<{
               fontSize="1.2rem"
               fontWeight="600"
               color={router.route === "/" ? "#2792c2" : "white"}
+              onClick={() => {
+                setOpened(false);
+              }}
             >
               Portfolio
             </Button>
@@ -47,6 +51,9 @@ export const NavbarMenu: React.FC<{
               fontSize="1.2rem"
               fontWeight="600"
               color={router.route === "/sluzby" ? "#2792c2" : "white"}
+              onClick={() => {
+                setOpened(false);
+              }}
             >
               Služby
             </Button>
@@ -56,6 +63,9 @@ export const NavbarMenu: React.FC<{
               fontSize="1.2rem"
               fontWeight="600"
               color={router.route === "/postprodukce" ? "#2792c2" : "white"}
+              onClick={() => {
+                setOpened(false);
+              }}
             >
               Postprodukce
             </Button>
@@ -65,6 +75,9 @@ export const NavbarMenu: React.FC<{
               fontSize="1.2rem"
               fontWeight="600"
               color={router.route === "/kontakt" ? "#2792c2" : "white"}
+              onClick={() => {
+                setOpened(false);
+              }}
             >
               Kontakt
             </Button>

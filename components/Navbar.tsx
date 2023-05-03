@@ -34,7 +34,7 @@ export default function Navbar() {
         boxShadow="0px 0.5px 17px 3px #000000"
         zIndex="100"
       >
-        {opened && <NavbarMenu opened={opened} />}
+        {opened && <NavbarMenu opened={opened} setOpened={setOpened} />}
         {/* {opened && (
           <Flex
             w="100%"
